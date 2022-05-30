@@ -1,1 +1,36 @@
 /* This is all you. */
+
+@font-face {
+    font-family: "be-extra-bold";
+    src: url("/fonts/BeVietnam-ExtraBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "be-semi-bold";
+    src: url("/fonts/BeVietnam-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "cir-bold";
+    src: url("/fonts/CircularStd-Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: "cir-book";
+    src: url("/fonts/CircularStd-Book.otf") format("otf");
+}
+
+@font-face {
+    font-family: "cir-medium";
+    src: url("/fonts/CircularStd-Medium.otf") format("otf");
+}
+
+@font-face {
+    font-family: "gotham";
+    src: url("/fonts/Gotham-Ultra.otf") format("otf");
+}
+
+@font-face {
+    font-family: "rota";
+    src: url("/fonts/Rota-Bold.otf") format("otf");
+}

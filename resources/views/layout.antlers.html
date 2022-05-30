@@ -7,10 +7,16 @@
         <title>{{ title ?? site:name }}</title>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
     </head>
-    <body class="bg-gray-100 font-sans leading-normal text-gray-800">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
-            {{ template_content }}
-        </div>
+    <body class="bg-gray-100 font-sans leading-normal text-gray-800
+    @env(['local','staging'] )
+debug-screens
+@endenv">
+    {{partial:layouts/navigation/_main_nav}}
+    <div class="">
+        {{ content }}
+    </div>
+
+    {{partial:layouts/footer/_main_footer}}
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>

@@ -61,6 +61,20 @@ return [
             'visibility' => 'public',
         ],
 
+        'think' => [
+            'driver' => 'local',
+            'root' => public_path( 'think' ),
+            'url' => '/think',
+            'visibility' => 'public',
+        ],
+
+        'products' => [
+            'driver' => 'local',
+            'root' => public_path( 'products' ),
+            'url' => '/products',
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*
