@@ -1,0 +1,18 @@
+title: Social
+data:
+  social_media:
+    -
+      social_image: social/facebook.svg
+      type: socials
+      enabled: true
+      social_alt: Facebook
+    -
+      social_image: social/linkedin.svg
+      type: socials
+      enabled: true
+      social_alt: 'Linked In'
+    -
+      social_image: social/twitter.svg
+      type: socials
+      enabled: true
+      social_alt: Twitter

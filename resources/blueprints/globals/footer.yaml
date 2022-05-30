@@ -1,0 +1,41 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: address_heading
+        field:
+          input_type: text
+          antlers: false
+          display: 'Address Heading'
+          type: text
+          icon: text
+          instructions: 'This will appear above the address label in the footer'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: contact_heading
+        field:
+          input_type: text
+          antlers: false
+          display: 'Contact Heading'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        import: text_link
+      -
+        handle: copy_label
+        field:
+          input_type: text
+          antlers: false
+          display: 'Copy Label'
+          type: text
+          icon: text
+          instructions: 'This will show at the bottom of the footer'
+          listable: hidden
+          instructions_position: above
+          read_only: false

@@ -1,0 +1,35 @@
+<footer class="h-footer bg-dark text-white  p-24 relative">
+    <div class="grid grid-cols-4">
+    {{ footer }}
+
+    <!--    Address Column -->
+    <div class="flex flex-col space-y-2">
+        <div class="text-4xl"> {{address_heading}}</div>
+        <div>{{company:company_address}}</div>
+        <div class="flex space-x-2 items-center">
+            <div><span class="text-lime">E: </span>{{company:company_email}}</div>
+            <div><span class="text-lime">T: </span> {{company:company_telephone}}</div>
+        </div>
+    </div>
+    <!--    Contact Column -->
+
+    <div class="flex flex-col space-y-3">
+        <div class="text-4xl">{{contact_heading}}</div>
+        <div>{{partial:layouts/fieldsets/_text_link}}</div>
+    </div>
+    <!--    Socials Column -->
+
+    <div></div>
+    <div class="flex space-x-2">
+        {{ social }}
+        {{ social_media }}
+        <a href="{{social_link}}"><img src="{{social_image}}" alt="{{social_alt}}"></a>
+        {{ /social_media }}
+
+        {{ /social }}
+    </div>
+    </div>
+
+    <div class="absolute bottom-4 w-full text-sm">{{ copy_label }}</div>
+    {{ /footer }}
+</footer>

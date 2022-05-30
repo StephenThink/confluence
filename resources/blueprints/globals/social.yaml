@@ -1,0 +1,55 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: social_media
+        field:
+          collapse: false
+          sets:
+            socials:
+              display: Socials
+              fields:
+                -
+                  handle: social_image
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: /
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    display: 'Social Image'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                -
+                  handle: social_linkage
+                  field:
+                    display: 'Social Linkage'
+                    type: link
+                    icon: link
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                -
+                  handle: social_alt
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Social Alt'
+                    type: text
+                    icon: text
+                    instructions: 'To be displayed if logo is unavailable.'
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+          display: 'Social Media'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          read_only: false

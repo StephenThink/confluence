@@ -1,0 +1,34 @@
+title: 'Text Link'
+fields:
+  -
+    handle: text_link_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Text Link Text'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: link_field
+    field:
+      display: 'Link Field'
+      type: link
+      icon: link
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: link_content
+    field:
+      input_type: text
+      antlers: false
+      display: 'Link Content'
+      type: text
+      icon: text
+      instructions: 'This will be show instead of the link address'
+      listable: hidden
+      instructions_position: above
+      read_only: false

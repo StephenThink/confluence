@@ -1,0 +1,67 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: company_name
+        field:
+          input_type: text
+          antlers: false
+          default: 'Company Name'
+          display: 'Company Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: company_address
+        field:
+          antlers: false
+          default: |-
+            32 Blackpool Road,
+            Poulton-Le-Fylde,
+            FY6 7QA
+          display: 'Company Address'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: company_telephone
+        field:
+          input_type: tel
+          antlers: false
+          default: '01253 297900'
+          display: 'Company Telephone'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: company_email
+        field:
+          input_type: email
+          antlers: false
+          default: info@thinkcreative.uk.com
+          display: 'Company Email'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: company_year
+        field:
+          input_type: number
+          antlers: false
+          default: '2005'
+          display: 'Company Year'
+          type: text
+          icon: text
+          instructions: 'When did the company start'
+          listable: hidden
+          instructions_position: above
+          read_only: false

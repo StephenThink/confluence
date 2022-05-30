@@ -7,35 +7,15 @@
         <title>{{ title ?? site:name }}</title>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
     </head>
-    <body class="bg-gray-100 leading-normal text-gray-800
+    <body class="bg-gray-100 leading-normal text-lime font-cir-book
     @env(['local','staging'] )
 debug-screens
 @endenv">
     {{partial:layouts/navigation/_main_nav}}
     <div class="">
         {{ content }}
+        sdfsd
     </div>
-
-    <div class="font-be-extra-bold">Extra Bold</div>
-    <div class="font-be-extra-bold text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis cupiditate debitis eum expedita, facilis fugit illo illum, impedit laborum minima nisi nostrum quas quisquam sequi unde, vitae voluptas.</div>
-    <div class="font-be-semi-bold">Semi Bold</div>
-    <div class="font-be-semi-bold text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis cupiditate debitis eum expedita, facilis fugit illo illum, impedit laborum minima nisi nostrum quas quisquam sequi unde, vitae voluptas.</div>
-    <div class="font-cir-bold">Cir Bold</div>
-    <div class="font-cir-bold text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis cupiditate debitis eum expedita, facilis fugit illo illum, impedit laborum minima nisi nostrum quas quisquam sequi unde, vitae voluptas.</div>
-
-    <div class="font-cir-book">Cir Book</div>
-    <div class="font-cir-book text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis cupiditate debitis eum expedita, facilis fugit illo illum, impedit laborum minima nisi nostrum quas quisquam sequi unde, vitae voluptas.</div>
-
-    <div class="font-cir-medium">Cir Medium</div>
-    <div class="font-cir-medium text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis cupiditate debitis eum expedita, facilis fugit illo illum, impedit laborum minima nisi nostrum quas quisquam sequi unde, vitae voluptas.</div>
-
-    <div class="font-gotham">Batman</div>
-    <div class="font-gotham text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis cupiditate debitis eum expedita, facilis fugit illo illum, impedit laborum minima nisi nostrum quas quisquam sequi unde, vitae voluptas.</div>
-
-    <div class="font-rota">Rota</div>
-    <div class="font-rota text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid corporis cupiditate debitis eum expedita, facilis fugit illo illum, impedit laborum minima nisi nostrum quas quisquam sequi unde, vitae voluptas.</div>
-
-
     {{partial:layouts/footer/_main_footer}}
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>

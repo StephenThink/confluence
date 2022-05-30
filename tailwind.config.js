@@ -18,7 +18,20 @@ module.exports = {
           "gotham": ['gotham'],
           "rota": ['rota'],
       },
-    extend: {},
+    extend: {
+          colors: {
+              lime: "#03FC96",
+              'dark-lime': "#0FBAA9",
+              'alt-lime': "#0BE3A0",
+              dark: "#1F2128",
+          },
+        spacing: {
+            navbar: '103px',
+            hero: '977px',
+            partners: '302px',
+            footer: '325px',
+        },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

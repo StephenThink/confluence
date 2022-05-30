@@ -1,0 +1,57 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: by32
+        field:
+          mode: list
+          container: assets
+          folder: icons
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: By32
+          type: assets
+          icon: assets
+          instructions: 'This should be a picture 32 x 32'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: by192
+        field:
+          mode: list
+          container: assets
+          folder: icons
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: By192
+          type: assets
+          icon: assets
+          instructions: 'This should be a image 192 x 192'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: apple_touch
+        field:
+          mode: list
+          container: assets
+          folder: icons
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Apple Touch'
+          type: assets
+          icon: assets
+          instructions: 'This will be displayed on the home screen of a device, has to be a png file'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - image
