@@ -1,3 +1,11 @@
+{{ if show_chat }}
+{{ partial:layouts/cta/chat}}
+{{ /if }}
+
+{{ if show_topleft }}
+<img id="hero-tri" class="absolute -top-10 left-[-7.5rem]" src="/assets/imgs/quarter-jagged.svg" alt="">
+{{ /if }}
+
 <div class="relative">
 <img class="absolute top-10 left-aboutoffleft z-1" src="/assets/imgs/about-jagged.svg" alt="">
 
@@ -9,9 +17,9 @@
         <div>{{partial:layouts/fieldsets/_text_link}}</div>
     </div>
     <div class="w-1/2 flex justify-center items-start relative">
-        <img class="w-10/12 z-10" src="{{about_image}}" alt="">
-        <img class="absolute top-0 left-aboutoffleft z-1 -rotate-45" src="/assets/imgs/about-jagged.svg" alt="">
-        <img class="absolute top-[23rem] left-[13.5rem] z-1 rotate-45 w-[300px]" src="/assets/imgs/quarter.svg" alt="">
+        <img  class="w-10/12 z-10" src="{{about_image}}" alt="">
+        <img id="topCornerImage" class="absolute top-0 left-[-8.5rem] z-1 -rotate-45" src="/assets/imgs/about-jagged.svg" alt="">
+        <img id="bottomCornerImage" class="absolute top-0 left-[13.5rem] z-1 rotate-45 w-[300px] " src="/assets/imgs/quarter.svg" alt="">
 
     </div>
 

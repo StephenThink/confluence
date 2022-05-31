@@ -1,7 +1,11 @@
 {{partial:layouts/hero/hero}}
 
+{{ if show_chat }}
+{{ partial:layouts/cta/chat}}
+{{ /if }}
+
 {{ if show_topleft }}
-<img class="absolute -top-10 left-offleft" src="/assets/imgs/quarter-jagged.svg" alt="">
+<img id="hero-tri" class="absolute -top-10 left-[-7.5rem]" src="/assets/imgs/quarter-jagged.svg" alt="">
 {{ /if }}
 
 <!-- Mission -->

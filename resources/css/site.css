@@ -69,10 +69,76 @@
 }
 
 
-
 .open {
     opacity: 1;
     right: 0;
 
+}
+
+#chat {
+    z-index: 100;
+    animation: chatslide 2s 3s ease-in-out forwards;
+}
+
+@keyframes chatslide {
+    0% {
+        right: -20rem;
+    }
+    100% {
+        right: -10.5rem;
+    }
+}
+
+#hero-tri {
+    animation: herotrislide 2s 3s ease-in-out forwards;
+
+}
+
+@keyframes herotrislide {
+    0% {
+        bottom: -50rem;
+    }
+    100% {
+        bottom: -25rem;
+    }
+}
+
+#topCornerImage {
+    animation: topCornerImage 2s 1s ease-in-out forwards;
+    visibility: hidden;
+}
+
+@keyframes topCornerImage {
+    0% {
+        top: 8.5rem;
+        left: 0rem;
+        scale: 0;
+    }
+    10% {
+        visibility: visible;
+    }
+    100% {
+        top: 0rem;
+        left: -8.5rem;
+        scale: 1;
+        visibility: visible;
+
+    }
+
+}
+
+
+#bottomCornerImage {
+    animation: bottomCornerImage 2s 1s ease-in-out forwards;
+
+}
+
+@keyframes bottomCornerImage {
+    0% {
+        top: 0rem;
+    }
+    100% {
+        top: 23rem;
+    }
 }
 

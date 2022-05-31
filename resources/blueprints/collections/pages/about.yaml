@@ -98,3 +98,13 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: show_chat
+        field:
+          default: true
+          display: 'Show Chat'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          read_only: false

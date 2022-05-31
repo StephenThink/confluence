@@ -507,6 +507,122 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 }
 
+#chat {
+    z-index: 100;
+    -webkit-animation: chatslide 2s 3s ease-in-out forwards;
+            animation: chatslide 2s 3s ease-in-out forwards;
+}
+
+@-webkit-keyframes chatslide {
+    0% {
+        right: -20rem;
+    }
+    100% {
+        right: -10.5rem;
+    }
+}
+
+@keyframes chatslide {
+    0% {
+        right: -20rem;
+    }
+    100% {
+        right: -10.5rem;
+    }
+}
+
+#hero-tri {
+    -webkit-animation: herotrislide 2s 3s ease-in-out forwards;
+            animation: herotrislide 2s 3s ease-in-out forwards;
+
+}
+
+@-webkit-keyframes herotrislide {
+    0% {
+        bottom: -50rem;
+    }
+    100% {
+        bottom: -25rem;
+    }
+}
+
+@keyframes herotrislide {
+    0% {
+        bottom: -50rem;
+    }
+    100% {
+        bottom: -25rem;
+    }
+}
+
+#topCornerImage {
+    -webkit-animation: topCornerImage 2s 1s ease-in-out forwards;
+            animation: topCornerImage 2s 1s ease-in-out forwards;
+    visibility: hidden;
+}
+
+@-webkit-keyframes topCornerImage {
+    0% {
+        top: 8.5rem;
+        left: 0rem;
+        scale: 0;
+    }
+    10% {
+        visibility: visible;
+    }
+    100% {
+        top: 0rem;
+        left: -8.5rem;
+        scale: 1;
+        visibility: visible;
+
+    }
+
+}
+
+@keyframes topCornerImage {
+    0% {
+        top: 8.5rem;
+        left: 0rem;
+        scale: 0;
+    }
+    10% {
+        visibility: visible;
+    }
+    100% {
+        top: 0rem;
+        left: -8.5rem;
+        scale: 1;
+        visibility: visible;
+
+    }
+
+}
+
+#bottomCornerImage {
+    -webkit-animation: bottomCornerImage 2s 1s ease-in-out forwards;
+            animation: bottomCornerImage 2s 1s ease-in-out forwards;
+
+}
+
+@-webkit-keyframes bottomCornerImage {
+    0% {
+        top: 0rem;
+    }
+    100% {
+        top: 23rem;
+    }
+}
+
+@keyframes bottomCornerImage {
+    0% {
+        top: 0rem;
+    }
+    100% {
+        top: 23rem;
+    }
+}
+
 .debug-screens::before {
   position: fixed;
   z-index: 2147483647;
@@ -557,6 +673,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -569,7 +689,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -2.5rem;
 }
 
-.left-offleft {
+.left-\[-7\.5rem\] {
   left: -7.5rem;
 }
 
@@ -585,60 +705,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 2.5rem;
 }
 
-.left-aboutoffleft {
+.left-\[-8\.5rem\] {
   left: -8.5rem;
-}
-
-.top-\[23rem\] {
-  top: 23rem;
 }
 
 .left-\[13\.5rem\] {
   left: 13.5rem;
 }
 
-.bottom-4 {
-  bottom: 1rem;
-}
-
 .top-1\/2 {
   top: 50%;
 }
 
-.right-1\/3 {
-  right: 33.333333%;
+.right-\[-20rem\] {
+  right: -20rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.bottom-4 {
+  bottom: 1rem;
 }
 
-.bottom-1\/2 {
-  bottom: 50%;
-}
-
-.-bottom-1\/2 {
-  bottom: -50%;
-}
-
-.-bottom-24 {
-  bottom: -6rem;
-}
-
-.-bottom-48 {
-  bottom: -12rem;
-}
-
-.-bottom-\[25rem\] {
-  bottom: -25rem;
-}
-
-.-right-10 {
-  right: -2.5rem;
+.-bottom-\[50rem\] {
+  bottom: -50rem;
 }
 
 .-right-\[10\.5rem\] {
   right: -10.5rem;
+}
+
+.right-1\/3 {
+  right: 33.333333%;
 }
 
 .z-10 {
@@ -725,13 +821,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 100%;
 }
 
-.translate-y-\[-3\.3rem\] {
-  --tw-translate-y: -3.3rem;
+.translate-x-3 {
+  --tw-translate-x: 0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-3 {
-  --tw-translate-x: 0.75rem;
+.translate-y-\[-3\.3rem\] {
+  --tw-translate-y: -3.3rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -845,11 +941,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(3 252 150 / var(--tw-bg-opacity));
 }
 
-.bg-indigo-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(129 140 248 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -935,10 +1026,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.75rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .align-middle {
   vertical-align: middle;
 }
@@ -1011,14 +1098,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lime {
   --tw-text-opacity: 1;
   color: rgb(3 252 150 / var(--tw-text-opacity));
-}
-
-.opacity-20 {
-  opacity: 0.2;
-}
-
-.bg-blend-darken {
-  background-blend-mode: darken;
 }
 
 .hover\:text-lime:hover {

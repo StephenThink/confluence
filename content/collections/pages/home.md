@@ -5,7 +5,7 @@ title: Home
 template: home
 author: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
 updated_by: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
-updated_at: 1653991813
+updated_at: 1654006867
 hero_data:
   -
     hero_title: 'Secure Payments & Clearing Services'
@@ -59,5 +59,6 @@ more_heading: 'More about confluence'
 more_content: 'confluence has an experienced management team seeking to disrupt the existing Clearing Bank  sector in the UK. The existing market is dominated by the traditional banking sector utilising  outdated technologies and focused on traditional payment methods.'
 button_text: Discover
 show_topleft: true
+show_chat: true
 ---
 Boom

@@ -31,8 +31,6 @@ module.exports = {
             partners: '302px',
             footer: '325px',
             panel: '400px',
-            offleft: '-7.5rem',
-            aboutoffleft: '-8.5rem',
             aboutimagetop: '29rem',
         },
         zIndex: {
