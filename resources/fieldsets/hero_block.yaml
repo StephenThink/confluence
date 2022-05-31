@@ -1,0 +1,56 @@
+title: 'Hero Block'
+fields:
+  -
+    handle: hero_data
+    field:
+      collapse: false
+      sets:
+        hero:
+          display: Hero
+          fields:
+            -
+              handle: hero_title
+              field:
+                input_type: text
+                antlers: false
+                display: 'Hero Title'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                read_only: false
+            -
+              handle: hero_content
+              field:
+                input_type: text
+                antlers: false
+                display: 'Hero Content'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                read_only: false
+            -
+              handle: hero_image
+              field:
+                mode: list
+                container: assets
+                folder: heroes
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: 'Hero Image'
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+                read_only: false
+            -
+              import: rounded_button
+      display: 'Hero Data'
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      read_only: false

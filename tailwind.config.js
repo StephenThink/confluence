@@ -30,6 +30,8 @@ module.exports = {
             hero: '977px',
             partners: '302px',
             footer: '325px',
+            panel: '400px',
+            offleft: '-7.5rem',
         },
     },
   },

@@ -2,3 +2,7 @@ name: Stephen
 super: true
 id: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
 password_hash: $2y$10$fKTu6kFQyzwawZvIRwAYBOFNrTYUZS0UZ1w3JEbNTtcl6zodlVR/C
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

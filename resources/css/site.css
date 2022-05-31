@@ -34,3 +34,16 @@
     font-family: "rota";
     src: url("/fonts/Rota-Bold.otf") format("opentype");
 }
+
+
+.block-heading {
+    @apply text-4xl font-cir-bold;
+}
+
+.block-subheading {
+    @apply text-2xl font-be-semi-bold;
+}
+
+.block-content {
+    @apply font-be-semi-bold;
+}

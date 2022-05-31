@@ -1,0 +1,221 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          display: Content
+          localizable: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+      -
+        handle: show_topleft
+        field:
+          default: true
+          display: 'Show TopLeft'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  hero:
+    display: Hero
+    fields:
+      -
+        import: hero_block
+  our_mission:
+    display: 'Our Mission'
+    fields:
+      -
+        handle: mission_heading
+        field:
+          input_type: text
+          antlers: false
+          display: 'Mission Heading'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: mission_subheading
+        field:
+          input_type: text
+          antlers: false
+          display: 'Mission Subheading'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: mission_text
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: 'Mission Text'
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  our_track_record:
+    display: 'Our Track Record'
+    fields:
+      -
+        handle: track_heading
+        field:
+          input_type: text
+          antlers: false
+          display: 'Track Heading'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: track_content
+        field:
+          input_type: text
+          antlers: false
+          display: 'Track Content'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        import: tracking_stats
+  more_about:
+    display: 'More About'
+    fields:
+      -
+        handle: more_image
+        field:
+          mode: list
+          container: assets
+          folder: imgs
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'More Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: more_heading
+        field:
+          input_type: text
+          antlers: false
+          display: 'More Heading'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: more_content
+        field:
+          input_type: text
+          antlers: false
+          display: 'More Content'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        import: rounded_button
+  partners:
+    display: Partners
+    fields:
+      -
+        handle: partner_heading
+        field:
+          input_type: text
+          antlers: false
+          display: 'Partner Heading'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: partner_subheading
+        field:
+          input_type: text
+          antlers: false
+          display: 'Partner Subheading'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: companies
+        field:
+          collapse: false
+          sets:
+            companies:
+              display: Companies
+              fields:
+                -
+                  handle: company_image
+                  field:
+                    mode: list
+                    container: assets
+                    folder: partners
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    display: 'Company Image'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+          display: Companies
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          read_only: false

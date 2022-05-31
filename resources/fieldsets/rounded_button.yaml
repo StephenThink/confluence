@@ -1,0 +1,23 @@
+title: 'Rounded Button'
+fields:
+  -
+    handle: button_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Button Text'
+      type: text
+      icon: text
+      instructions: 'Text to be displayed on button.'
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: button_link
+    field:
+      display: 'Button Link'
+      type: link
+      icon: link
+      listable: hidden
+      instructions_position: above
+      read_only: false

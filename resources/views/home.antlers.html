@@ -1,1 +1,52 @@
-Home Test
+{{partial:layouts/hero/hero}}
+
+{{ if show_topleft }}
+<img class="absolute -top-10 left-offleft" src="/assets/imgs/quarter-jagged.svg" alt="">
+{{ /if }}
+
+<!-- Mission -->
+<div class="h-panel bg-dark text-white py-24 px-48 flex flex-col space-y-4">
+    <div class="block-heading">{{mission_heading}}</div>
+    <div class="block-content">{{mission_subheading}}</div>
+    <div class="pb-4">{{mission_text | nl2br}}</div>
+</div>
+
+
+<!-- Tracking -->
+
+<div class="h-[450px] bg-white text-dark py-24 px-48 flex flex-col space-y-4">
+    <div class="block-heading">{{track_heading}}</div>
+    <div class="pb-4">{{track_content | nl2br}}</div>
+    <div class="grid grid-cols-4 space-x-2">
+        {{ stats }}
+        {{ partial:layouts/fieldsets/tracking_stats }}
+        {{ /stats }}
+    </div>
+</div>
+
+<!-- More -->
+
+<div class="h-panel bg-dark-lime text-white py-12 px-48 grid grid-cols-2">
+    <div class="z-10 relative">
+        <img class="" src="{{more_image}}" alt="">
+        <div class="absolute top-0 right-0"><img src="/assets/imgs/quarter.svg" alt=""></div>
+    </div>
+    <div class="flex flex-col space-y-4 p-12">
+        <div class="block-heading">{{more_heading}}</div>
+        <div class="">{{more_content}}</div>
+        <div class="z-10 pt-[2.5rem]">{{ partial:layouts/fieldsets/rounded_button}}</div>
+
+    </div>
+</div>
+
+
+<!-- Partners -->
+<div class="h-panel bg-white text-dark p-24 flex flex-col space-y-4">
+    <div class="block-heading">{{partner_heading}}</div>
+    <div class="pb-4">{{partner_subheading}}</div>
+    <div class="grid grid-cols-4 space-x-2 align-middle items-center transform translate-y-[-3.3rem]">
+        {{ companies }}
+        <img class="" src="{{company_image}}" alt="">
+        {{ /companies }}
+    </div>
+</div>

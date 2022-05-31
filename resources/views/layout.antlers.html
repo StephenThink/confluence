@@ -7,14 +7,13 @@
         <title>{{ title ?? site:name }}</title>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
     </head>
-    <body class="bg-gray-100 leading-normal text-lime font-cir-book
+    <body class="bg-gray-100 leading-normal font-be-semi-bold w-full relative
     @env(['local','staging'] )
 debug-screens
 @endenv">
     {{partial:layouts/navigation/_main_nav}}
     <div class="">
-        {{ content }}
-        sdfsd
+        {{ template_content }}
     </div>
     {{partial:layouts/footer/_main_footer}}
         <script src="{{ mix src='/js/site.js' }}"></script>
