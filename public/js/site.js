@@ -8,6 +8,11 @@
 /***/ (() => {
 
 // This is all you.
+var ham = document.getElementById('ham');
+var navmenu = document.getElementById('navmenu');
+ham.addEventListener("click", function () {
+  navmenu.classList.toggle("open");
+});
 
 /***/ }),
 

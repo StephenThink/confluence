@@ -55,3 +55,22 @@
 .block-content > ul > br {
     display: none;
 }
+
+.nav-menu {
+    z-index: 99;
+    position: absolute;
+    top: 103px;
+    right: 0;
+    height: 48rem;
+    width: 48rem;
+
+    overflow: hidden;
+    transition: 2s;
+    opacity: 0;
+}
+
+.open {
+    opacity: 1;
+    /*right: -11rem;*/
+
+}

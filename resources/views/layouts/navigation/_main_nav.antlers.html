@@ -1,14 +1,23 @@
-<nav class="h-navbar flex justify-between items-center text-dark px-24 text-3xl">
+<nav class="h-navbar flex justify-between items-center text-dark px-24 text-3xl relative z-100 bg-white">
     <div class="flex items-center pl-24">confluence <span><img class="h-8 pl-3" src="/assets/logos/company_logo.svg" alt=""></span></div>
 
 
 
-    <div><svg xmlns="http://www.w3.org/2000/svg" width="39" height="33" viewBox="0 0 39 33">
+    <div id="ham" class="z-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="33" viewBox="0 0 39 33">
         <g id="Group_36" data-name="Group 36" transform="translate(-1831 -32)">
             <rect id="Rectangle_11" data-name="Rectangle 11" width="39" height="5" transform="translate(1831 32)" fill="#1f2128"/>
             <rect id="Rectangle_20" data-name="Rectangle 20" width="39" height="5" transform="translate(1831 46)" fill="#1f2128"/>
             <rect id="Rectangle_21" data-name="Rectangle 21" width="39" height="5" transform="translate(1831 60)" fill="#1f2128"/>
         </g>
     </svg>
+        <div id="navmenu" class="nav-menu overflow-hidden"><img src="/assets/imgs/nav-menu.svg" alt="">
+            <div class="absolute top-10 right-1/3 flex flex-col space-y-6">
+                {{ nav:main_nav }}
+                <a class="text-white text-lg uppercase hover:text-lime" href="{{ url }}">{{ title }}</a>
+                {{ /nav:main_nav }}
+            </div>
+
+        </div>
     </div>
 </nav>

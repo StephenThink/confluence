@@ -35,6 +35,10 @@ module.exports = {
             aboutoffleft: '-8.5rem',
             aboutimagetop: '29rem',
         },
+        zIndex: {
+              '99': '99',
+              '100': '100',
+        },
     },
   },
   plugins: [
