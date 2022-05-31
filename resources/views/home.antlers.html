@@ -41,12 +41,4 @@
 
 
 <!-- Partners -->
-<div class="h-panel bg-white text-dark p-24 flex flex-col space-y-4">
-    <div class="block-heading">{{partner_heading}}</div>
-    <div class="pb-4">{{partner_subheading}}</div>
-    <div class="grid grid-cols-4 space-x-2 align-middle items-center transform translate-y-[-3.3rem]">
-        {{ companies }}
-        <img class="" src="{{company_image}}" alt="">
-        {{ /companies }}
-    </div>
-</div>
+{{ partial:layouts/panels/partners bg="bg-white" tc="text-dark" }}

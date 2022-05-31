@@ -1,0 +1,100 @@
+title: About
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: heading
+        field:
+          input_type: text
+          antlers: false
+          display: Heading
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: subheading
+        field:
+          input_type: text
+          antlers: false
+          display: SubHeading
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: content
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Content
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        import: text_link
+      -
+        handle: about_image
+        field:
+          mode: list
+          container: assets
+          folder: /
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'About Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+      -
+        handle: show_topleft
+        field:
+          default: true
+          display: 'Show TopLeft'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          read_only: false

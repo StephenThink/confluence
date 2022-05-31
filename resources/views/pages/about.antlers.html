@@ -1,0 +1,22 @@
+<div class="relative">
+<img class="absolute top-10 left-aboutoffleft z-1" src="/assets/imgs/about-jagged.svg" alt="">
+
+<div class="flex px-48 py-24 z-10">
+    <div class="flex flex-col space-y-4 w-1/2 z-10 pt-48">
+        <div class="block-heading">{{ heading }}</div>
+        <div class="block-subheading">{{ subheading }}</div>
+        <div class="block-content ">{{ content | nl2br }}</div>
+        <div>{{partial:layouts/fieldsets/_text_link}}</div>
+    </div>
+    <div class="w-1/2 flex justify-center items-start relative">
+        <img class="w-10/12 z-10" src="{{about_image}}" alt="">
+        <img class="absolute top-0 left-aboutoffleft z-1 -rotate-45" src="/assets/imgs/about-jagged.svg" alt="">
+        <img class="absolute top-[23rem] left-[13.5rem] z-1 rotate-45 w-[300px]" src="/assets/imgs/quarter.svg" alt="">
+
+    </div>
+
+</div>
+
+<!-- Partners -->
+{{ partial:layouts/panels/partners }}
+</div>

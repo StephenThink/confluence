@@ -58,25 +58,6 @@ more_image: imgs/home_more.svg
 more_heading: 'More about confluence'
 more_content: 'confluence has an experienced management team seeking to disrupt the existing Clearing Bank  sector in the UK. The existing market is dominated by the traditional banking sector utilising  outdated technologies and focused on traditional payment methods.'
 button_text: Discover
-partner_heading: 'Our Partners'
-partner_subheading: 'We believe in better together'
-companies:
-  -
-    company_image: partners/microsoft.svg
-    type: companies
-    enabled: true
-  -
-    company_image: partners/google.svg
-    type: companies
-    enabled: true
-  -
-    company_image: partners/aws.svg
-    type: companies
-    enabled: true
-  -
-    company_image: partners/deloitte.svg
-    type: companies
-    enabled: true
 show_topleft: true
 ---
 Boom

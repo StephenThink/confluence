@@ -45,5 +45,13 @@
 }
 
 .block-content {
-    @apply font-be-semi-bold;
+    @apply text-base font-be-semi-bold;
+}
+
+.block-content > ul {
+    @apply list-disc list-inside;
+}
+
+.block-content > ul > br {
+    display: none;
 }
