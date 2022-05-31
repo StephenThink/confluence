@@ -609,6 +609,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 33.333333%;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-1\/2 {
+  bottom: 50%;
+}
+
+.-bottom-1\/2 {
+  bottom: -50%;
+}
+
+.-bottom-24 {
+  bottom: -6rem;
+}
+
+.-bottom-48 {
+  bottom: -12rem;
+}
+
+.-bottom-\[25rem\] {
+  bottom: -25rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.-right-\[10\.5rem\] {
+  right: -10.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
