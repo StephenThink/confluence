@@ -1,11 +1,12 @@
-<div class="h-hero w-full relative overflow-hidden ">
+<div class="h-hero w-full h-hero-height relative overflow-hidden ">
     {{ hero_data.0 }}
 
-    <img class="absolute w-full h-full object-cover object-center" src="{{hero_image}}" alt="">
+<!--    <img src="{{ glide:hero_image width="1280" height="900" fit="crop_focal" absolute="true" }}" alt=""/>-->
+    <img class="absolute w-full h-full object-cover" src="{{glide:hero_image fit='crop_focal'}}" alt="">
     <div class="absolute w-full h-full bg-black bg-opacity-20" alt=""></div>
-    <img id="hero-tri" class="absolute -bottom-[50rem] -right-[10.5rem]" src="/assets/imgs/hero_triangle.svg" alt="">
+    <img id="hero-tri" class="absolute hidden md:block -bottom-[50rem] -right-[10.5rem]" src="/assets/imgs/hero_triangle.svg" alt="">
 
-    <div class="absolute top-1/2 pl-48 flex flex-col justify-center text-white ">
+    <div class="absolute top-1/4 md:top-1/2 w-10/12 pl-4 md:pl-48 flex flex-col justify-center text-white ">
         <div class="z-102 text-5xl leading-tight">{{hero_title}}</div>
         <div class="z-102 text-xl pt-3">{{hero_content}}</div>
         <div class="z-102 pt-[2.5rem]">{{ partial:layouts/fieldsets/rounded_button}}</div>

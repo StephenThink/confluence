@@ -5,11 +5,11 @@
 {{ /if }}
 
 {{ if show_topleft }}
-<img id="hero-tri" class="absolute -top-[5.5rem] left-[-10.5rem]" src="/assets/imgs/quarter-jagged.svg" alt="">
+<img id="hero-tri" class="absolute hidden md:block -top-[5.5rem] left-[-10.5rem]" src="/assets/imgs/quarter-jagged.svg" alt="">
 {{ /if }}
 
 <!-- Mission -->
-<div class="h-panel bg-dark text-white py-24 px-48 flex flex-col space-y-4">
+<div class="bg-dark text-white panel-size flex flex-col space-y-4">
     <div class="block-heading">{{mission_heading}}</div>
     <div class="block-content">{{mission_subheading}}</div>
     <div class="pb-4">{{mission_text | nl2br}}</div>
@@ -18,10 +18,10 @@
 
 <!-- Tracking -->
 
-<div class="h-[450px] bg-white text-dark py-24 px-48 flex flex-col space-y-4">
+<div class="bg-white text-dark panel-size flex flex-col space-y-4">
     <div class="block-heading">{{track_heading}}</div>
     <div class="pb-4">{{track_content | nl2br}}</div>
-    <div class="grid grid-cols-4 space-x-2">
+    <div class="grid grid-cols-1 md:grid-cols-4 space-y-4 space-x-2 mx-auto">
         {{ stats }}
         {{ partial:layouts/fieldsets/tracking_stats }}
         {{ /stats }}
@@ -30,10 +30,10 @@
 
 <!-- More -->
 
-<div class="h-panel bg-dark-lime text-white py-12 px-48 grid grid-cols-2">
+<div class="bg-dark-lime text-white panel-size grid grid-cols-1 md:grid-cols-2">
     <div class="z-10 relative">
         <img class="" src="{{more_image}}" alt="">
-        <div class="absolute top-0 right-0"><img src="/assets/imgs/quarter.svg" alt=""></div>
+        <div class="absolute hidden md:block top-0 right-0"><img src="/assets/imgs/quarter.svg" alt=""></div>
     </div>
     <div class="flex flex-col space-y-4 p-12">
         <div class="block-heading">{{more_heading}}</div>

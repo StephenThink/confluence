@@ -32,6 +32,7 @@ module.exports = {
             footer: '325px',
             panel: '400px',
             aboutimagetop: '29rem',
+            "hero-height": "calc(100vh - 103px)",
         },
         zIndex: {
               '99': '99',

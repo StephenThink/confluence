@@ -144,3 +144,6 @@ z-index: 101;
     }
 }
 
+.panel-size {
+    @apply px-6 py-10 md:py-24 md:px-48
+}
