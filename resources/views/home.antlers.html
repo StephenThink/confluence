@@ -5,7 +5,7 @@
 {{ /if }}
 
 {{ if show_topleft }}
-<img id="hero-tri" class="absolute hidden md:block -top-[5.5rem] left-[-10.5rem]" src="/assets/imgs/quarter-jagged.svg" alt="">
+<img id="hero-tri" class="absolute hidden lg:block -top-[5.5rem] left-[-10.5rem] transform-gpu xl:-translate-x-10 2xl:translate-x-0" src="/assets/imgs/quarter-jagged.svg" alt="">
 {{ /if }}
 
 <!-- Mission -->
@@ -21,7 +21,7 @@
 <div class="bg-white text-dark panel-size flex flex-col space-y-4">
     <div class="block-heading">{{track_heading}}</div>
     <div class="pb-4">{{track_content | nl2br}}</div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-y-4 space-x-2 mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-y-4 space-x-2 mx-auto xl:mx-0">
         {{ stats }}
         {{ partial:layouts/fieldsets/tracking_stats }}
         {{ /stats }}
@@ -31,9 +31,9 @@
 <!-- More -->
 
 <div class="bg-dark-lime text-white panel-size grid grid-cols-1 md:grid-cols-2">
-    <div class="z-10 relative">
-        <img class="" src="{{more_image}}" alt="">
-        <div class="absolute hidden md:block top-0 right-0"><img src="/assets/imgs/quarter.svg" alt=""></div>
+    <div class="z-10 relative flex items-center">
+        <img class="z-10" src="{{more_image}}" alt="">
+        <div class="absolute hidden md:rotate-[270deg]lg:block top-0 right-0  z-1"><img src="/assets/imgs/quarter.svg" alt=""></div>
     </div>
     <div class="flex flex-col space-y-4 p-12">
         <div class="block-heading">{{more_heading}}</div>

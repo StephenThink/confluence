@@ -89,20 +89,6 @@
     }
 }
 
-#hero-tri {
-    animation: herotrislide 2s 3s ease-in-out forwards;
-z-index: 101;
-}
-
-@keyframes herotrislide {
-    0% {
-        bottom: -50rem;
-    }
-    100% {
-        bottom: -25rem;
-    }
-}
-
 #topCornerImage {
     animation: topCornerImage 2s 1s ease-in-out forwards;
     visibility: hidden;
@@ -145,5 +131,5 @@ z-index: 101;
 }
 
 .panel-size {
-    @apply px-6 py-10 md:py-24 md:px-48
+    @apply px-6 py-10  lg:px-24 lg:py-12 xl:px-20 xl:py-20  2xl:px-48 2xl:py-24
 }
