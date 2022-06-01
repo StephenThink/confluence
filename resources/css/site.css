@@ -36,8 +36,30 @@
 }
 
 
-.block-heading {
+.block-heading, .footer-heading {
     @apply text-4xl font-cir-bold;
+}
+
+.block-heading:after, .stat-desc:after {
+    content: " ";
+    display: block;
+    width: 4rem;
+    height: 6px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: theme('colors.lime');
+    background: linear-gradient(270deg, theme('colors.lime'), theme('colors.dark-lime'), theme('colors.alt-lime'),  theme('colors.lime'));
+    background-size: 200%;
+    animation: move-background 3s linear infinite;
+}
+
+@keyframes move-background {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
 }
 
 .block-subheading {
@@ -73,20 +95,6 @@
     opacity: 1;
     right: 0;
 
-}
-
-#chat {
-    z-index: 100;
-    animation: chatslide 2s 3s ease-in-out forwards;
-}
-
-@keyframes chatslide {
-    0% {
-        right: -20rem;
-    }
-    100% {
-        right: -10.5rem;
-    }
 }
 
 #topCornerImage {

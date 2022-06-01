@@ -11,11 +11,7 @@ sections:
           validate:
             - required
       -
-        handle: content
-        field:
-          type: markdown
-          display: Content
-          localizable: true
+        import: hero_block
   sidebar:
     display: Sidebar
     fields:
@@ -59,11 +55,6 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
-  hero:
-    display: Hero
-    fields:
-      -
-        import: hero_block
   our_mission:
     display: 'Our Mission'
     fields:

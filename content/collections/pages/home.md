@@ -5,7 +5,7 @@ title: Home
 template: home
 author: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
 updated_by: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
-updated_at: 1654006867
+updated_at: 1654089086
 hero_data:
   -
     hero_title: 'Secure Payments & Clearing Services'
@@ -14,6 +14,7 @@ hero_data:
     type: hero
     enabled: true
     button_text: Contact
+    button_link: 'entry::6015244d-1ad2-4b99-bd50-307aa7a8fa79'
   -
     hero_title: 'Discover confluence'
     hero_content: 'Transactions from around the world'
@@ -60,5 +61,6 @@ more_content: 'confluence has an experienced management team seeking to disrupt 
 button_text: Discover
 show_topleft: true
 show_chat: true
+button_link: 'entry::fc11b0aa-acd2-4747-bacc-566a8a01e48c'
 ---
 Boom

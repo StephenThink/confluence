@@ -1,10 +1,10 @@
-<footer class="bg-dark text-white  px-6 pt-12 pb-24 relative">
+<footer class="bg-dark text-white  px-6 lg:px-24 xl:px-20 2xl:px-48 pt-12 pb-24 relative">
     <div class="grid grid-cols-1 lg:grid-cols-3 space-y-4 lg:space-y-0">
     {{ footer }}
 
     <!--    Address Column -->
     <div class="flex flex-col space-y-3">
-        <div class="block-heading"> {{address_heading}}</div>
+        <div class="footer-heading"> {{address_heading}}</div>
         <div class="block-content">{{company:company_address}}</div>
         <div class="flex flex-col xl:flex-row xl:space-x-2">
             <div class="block-content"><span class="text-lime">E: </span>{{company:company_email}}</div>
@@ -14,7 +14,7 @@
     <!--    Contact Column -->
 
     <div class="flex flex-col space-y-3">
-        <div class="block-heading">{{contact_heading}}</div>
+        <div class="footer-heading">{{contact_heading}}</div>
         <div class="block-content">{{partial:layouts/fieldsets/_text_link}}</div>
     </div>
 

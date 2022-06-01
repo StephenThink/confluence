@@ -38,6 +38,7 @@ module.exports = {
                 '99': '99',
                 '100': '100',
                 '102': '102',
+                '1000': '1000',
             },
             keyframes: {
                 mdTriSlide: {
@@ -45,23 +46,34 @@ module.exports = {
                     '100%': {bottom: '-25rem'},
                 },
                 lgTriSlide: {
-                    '0%': {bottom: '-50rem'},
-                    '100%': {bottom: '-35rem'},
+                    '0%': {bottom: '-50rem',right:'-14.5rem'},
+                    '100%': {bottom: '-35rem',right:'-14.5rem'},
                 },
                 xlTriSlide: {
                     '0%': {bottom: '-55rem',right:'-14.5rem'},
                     '100%': {bottom: '-35rem',right:'-14.5rem'},
                 },
+                // '2xlTriSlide': {
+                //     '0%': {bottom: '-55rem'},
+                //     '100%': {bottom: '-30rem'},
+                // },
                 '2xlTriSlide': {
                     '0%': {bottom: '-55rem'},
-                    '100%': {bottom: '-25rem'},
+                    '100%': {transform: 'translateY(-30rem)'},
                 },
+                chat: {
+                    '0%': {right: '-20rem'},
+                    '100%': {right: '-10.5rem'},
+                },
+
             },
             animation: {
                 mdTriSlide: 'mdTriSlide 2s 3s ease-in-out forwards',
                 lgTriSlide: 'lgTriSlide 2s 3s ease-in-out forwards',
                 xlTriSlide: 'xlTriSlide 2s 3s ease-in-out forwards',
                 '2xlTriSlide': '2xlTriSlide 2s 3s ease-in-out forwards',
+                chat: 'chat 2s 3s ease-in-out forwards',
+
         },
     },
 },
