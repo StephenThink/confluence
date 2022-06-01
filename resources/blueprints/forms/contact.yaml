@@ -1,0 +1,74 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: first_name
+        field:
+          input_type: text
+          character_limit: 15
+          antlers: false
+          display: 'First Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          width: 50
+          validate:
+            - required
+      -
+        handle: last_name
+        field:
+          input_type: text
+          character_limit: 20
+          antlers: false
+          display: 'Last Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          width: 50
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          width: 50
+      -
+        handle: subject
+        field:
+          input_type: text
+          antlers: false
+          display: Subject
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          width: 50
+      -
+        handle: message
+        field:
+          antlers: false
+          display: 'Leave us a message'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required

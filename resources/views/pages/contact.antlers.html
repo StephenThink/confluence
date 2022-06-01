@@ -1,0 +1,58 @@
+{{ if show_chat }}
+{{ partial:layouts/cta/chat}}
+{{ /if }}
+
+{{ if show_topleft }}
+<img id="hero-tri" class="absolute -top-10 left-[-7.5rem]" src="/assets/imgs/quarter-jagged.svg" alt="">
+{{ /if }}
+
+<div class="bg-lime relative h-screen text-dark overflow-hidden">
+    <div class="grid grid-cols-2 pt-56 ">
+        <div class="z-100 pt-8 px-24">
+            <div class="block-heading tracking-wider z-100 pt-8">{{contact_heading}}</div>
+            <div class="block-content z-100 pt-4">{{contact_content}}</div>
+        </div>
+            <img class="absolute z-10 bottom-[-12rem] left-[11.5rem] " src="/assets/imgs/contact_black.svg" alt="">
+            <img class="absolute z-10 top-[10rem] left-[-15rem]" src="/assets/imgs/contact_white.svg" alt="">
+        <div class="p-24 px-48">
+            {{ form:contact }}
+
+
+            {{ if success }}
+            <div class="bg-green-300 text-white p-2">
+                {{ success }}
+            </div>
+            {{ else }}
+
+            {{ if errors }}
+            <div class="bg-red-300 text-white p-2">
+                {{ errors }}
+                {{ value }}<br>
+                {{ /errors }}
+            </div>
+            {{ /if }}
+
+
+            {{ fields }}
+            <div class="p-2">
+                <label>{{ display }}</label>
+                <div class="p-1">{{ field }}</div>
+                {{ if error }}
+                <p class="text-gray-500">{{ error }}</p>
+                {{ /if }}
+            </div>
+            {{ /fields }}
+
+
+            <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+            <button class="rounded-full px-5 py-2 bg-white text-dark" type="submit">Submit</button>
+           {{ /if }}
+
+            {{ /form:contact }}
+        </div>
+    </div>
+</div>
+
+<!-- Partners -->
+{{ partial:layouts/panels/partners }}

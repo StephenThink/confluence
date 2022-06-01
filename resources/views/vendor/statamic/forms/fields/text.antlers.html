@@ -1,0 +1,9 @@
+<input class="bg-transparent border border-0 border-b-2 border-b-dark w-1/2 "
+    type="{{ input_type ?? 'text' }}"
+    name="{{ handle }}"
+    value="{{ old ?? default }}"
+    {{ if placeholder }}placeholder="{{ placeholder }}"{{ /if }}
+    {{ if character_limit }}maxlength="{{ character_limit }}"{{ /if }}
+    {{ if js_driver }}{{ js_attributes }}{{ /if }}
+    {{ if validate|contains:required }}required{{ /if }}
+>

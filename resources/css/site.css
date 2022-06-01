@@ -91,7 +91,7 @@
 
 #hero-tri {
     animation: herotrislide 2s 3s ease-in-out forwards;
-
+z-index: 101;
 }
 
 @keyframes herotrislide {
@@ -130,6 +130,7 @@
 
 #bottomCornerImage {
     animation: bottomCornerImage 2s 1s ease-in-out forwards;
+    visibility: hidden;
 
 }
 
@@ -139,6 +140,7 @@
     }
     100% {
         top: 23rem;
+        visibility: visible;
     }
 }
 
