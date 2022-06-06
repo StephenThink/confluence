@@ -12,10 +12,11 @@ var ham = document.getElementById('ham');
 var navmenu = document.getElementById('navmenu');
 var burger = document.getElementById('burger');
 var close = document.getElementById('close');
-ham.addEventListener("click", function () {
+ham.addEventListener("click", function (e) {
   navmenu.classList.toggle("open");
   burger.classList.toggle("hidden");
   close.classList.toggle("hidden");
+  e.stopPropagation();
 });
 
 /***/ }),

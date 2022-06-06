@@ -1,10 +1,14 @@
 <div class="panel-size flex flex-col space-y-4 {{ bg ? bg : 'bg-dark-lime' }} {{ tc ? tc : 'text-white' }}">
     {{ partners }}
+    {{ if bg }}
     <div class="block-heading">{{partner_heading}}</div>
+    {{ else }}
+    <div class="alt-block-heading">{{partner_heading}}</div>
+    {{ /if }}
     <div class="pb-4">{{partner_subheading}}</div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-x-2 align-middle items-center transform md:translate-y-[-3.3rem]">
         {{ companies }}
-        <img class="" src="{{company_image}}" alt="">
+        <img class="bg-blend-color" src="{{company_image}}" alt="">
         {{ /companies }}
     </div>
     {{ /partners }}

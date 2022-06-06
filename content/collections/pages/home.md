@@ -5,7 +5,7 @@ title: Home
 template: home
 author: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
 updated_by: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
-updated_at: 1654089086
+updated_at: 1654097673
 hero_data:
   -
     hero_title: 'Secure Payments & Clearing Services'
@@ -62,5 +62,6 @@ button_text: Discover
 show_topleft: true
 show_chat: true
 button_link: 'entry::fc11b0aa-acd2-4747-bacc-566a8a01e48c'
+chat_light: true
 ---
 Boom

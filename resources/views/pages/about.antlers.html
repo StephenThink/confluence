@@ -1,3 +1,4 @@
+<script src="../../../tailwind.config.js"></script>
 {{ if show_chat }}
 {{ partial:layouts/cta/chat}}
 {{ /if }}
@@ -6,20 +7,19 @@
 <img id="hero-tri" class="absolute -top-10 left-[-7.5rem]" src="/assets/imgs/quarter-jagged.svg" alt="">
 {{ /if }}
 
-<div class="relative">
-<img class="absolute top-10 left-aboutoffleft z-1" src="/assets/imgs/about-jagged.svg" alt="">
 
-<div class="flex px-48 py-24 z-10">
-    <div class="flex flex-col space-y-4 w-1/2 z-10 pt-48">
-        <div class="block-heading">{{ heading }}</div>
-        <div class="block-subheading">{{ subheading }}</div>
-        <div class="block-content ">{{ content | nl2br }}</div>
+<div class="flex flex-col-reverse lg:flex-row z-10 lg:items-center ">
+    <div class="flex flex-col space-y-4 w-full z-10 px-6 py-10  lg:px-24 lg:py-12 xl:px-20 xl:py-20  2xl:px-48 2xl:py-24 relative">
+        <div class="lg:pt-48 block-heading z-10">{{ heading }}</div>
+        <div class="block-subheading z-10">{{ subheading }}</div>
+        <div class="block-content  z-10">{{ content | nl2br }}</div>
         <div>{{partial:layouts/fieldsets/_text_link}}</div>
+<img id="more-jag" class="absolute top-10 left-0 z-1 hidden lg:block transform-gpu lg:translate-x-[-8.8rem] lg:translate-y-[-3.8rem] 2xl:translate-x-[-5.8rem] 2xl:translate-y-[-1.8rem]" src="/assets/imgs/about-jagged.svg" alt="">
     </div>
-    <div class="w-1/2 flex justify-center items-start relative">
-        <img  class="w-10/12 z-10" src="{{about_image}}" alt="">
-        <img id="topCornerImage" class="absolute top-0 left-[-8.5rem] z-1 -rotate-45" src="/assets/imgs/about-jagged.svg" alt="">
-        <img id="bottomCornerImage" class="absolute top-0 left-[13.5rem] z-1 rotate-45 w-[300px] " src="/assets/imgs/quarter.svg" alt="">
+    <div class="w-full flex justify-center items-start relative transform-gpu lg:translate-y-[-10.5rem] lg:translate-x-[-1rem] 2xl:translate-y-[-3.5rem]">
+        <img  class="w-10/12 sm:w-8/12 lg:w-10/12 z-10" src="{{about_image}}" alt="">
+        <img id="topCornerImage" class="absolute top-0 left-0 transform-gpu translate-x-[-4.8rem] z-1 w-[22rem] sm:w-[26rem] sm:translate-x-[-2.8rem] md:w-[32rem] lg:translate-x-[-6.8rem] xl:w-[37rem] 2xl:w-[46rem] lg:translate-x-[-9.8rem] -rotate-45" src="/assets/imgs/about-jagged.svg" alt="">
+        <img id="bottomCornerImage" class="absolute top-0 left-0 transform-gpu translate-x-[6.5rem] translate-y-[11.5rem] sm:translate-x-[11.5rem] sm:translate-y-[14.5rem] md:translate-x-[16.5rem] md:translate-y-[22.5rem] lg:translate-x-[12.5rem] lg:translate-y-[20.5rem] xl:w-[14rem] xl:translate-x-[13.5rem] xl:translate-y-[28.5rem] 2xl:w-[17rem] 2xl:translate-x-[16.5rem] 2xl:translate-y-[31.5rem] z-1 rotate-45 " src="/assets/imgs/quarter.svg" alt="">
 
     </div>
 
@@ -27,4 +27,4 @@
 
 <!-- Partners -->
 {{ partial:layouts/panels/partners }}
-</div>
+

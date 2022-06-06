@@ -65,3 +65,26 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: chat_light
+        field:
+          default: true
+          display: 'Chat Light'
+          type: toggle
+          icon: toggle
+          instructions: 'Toggle on to have the light version of Chat Button'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          if:
+            show_chat: 'equals true'
+      -
+        handle: green_navbar
+        field:
+          default: false
+          display: 'Green Navbar'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          read_only: false

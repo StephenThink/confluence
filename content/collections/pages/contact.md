@@ -5,7 +5,9 @@ title: Contact
 contact_heading: 'For Enquires or Questions'
 contact_content: 'Please use the form'
 updated_by: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
-updated_at: 1654008942
+updated_at: 1654097876
 template: pages/contact
 show_chat: true
+chat_light: false
+green_navbar: true
 ---

@@ -7,11 +7,12 @@ subheading: 'Dynamic and seamless upgrades'
 template: pages/about
 show_topleft: false
 updated_by: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
-updated_at: 1654006904
+updated_at: 1654097685
 text_link_text: 'Discover more about'
 link_content: 'our team >'
 about_image: imgs/about.svg
 show_chat: true
+chat_light: true
 ---
 The existing market is dominated by the traditional banking sector utilising outdated technologies and focused on traditional payment methods. 
 

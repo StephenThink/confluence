@@ -9,7 +9,7 @@
 <div class="bg-lime relative h-screen text-dark overflow-hidden">
     <div class="grid grid-cols-2 pt-56 ">
         <div class="z-100 pt-8 px-24">
-            <div class="block-heading tracking-wider z-100 pt-8">{{contact_heading}}</div>
+            <div class="contact-heading tracking-wider z-100 pt-8">{{contact_heading}}</div>
             <div class="block-content z-100 pt-4">{{contact_content}}</div>
         </div>
             <img class="absolute z-10 bottom-[-12rem] left-[11.5rem] " src="/assets/imgs/contact_black.svg" alt="">
@@ -31,18 +31,27 @@
                 {{ /errors }}
             </div>
             {{ /if }}
-
-
-            {{ fields }}
+<div class="grid grid-cols-2">
+            {{ fields limit="4" }}
             <div class="p-2">
-                <label>{{ display }}</label>
-                <div class="p-1">{{ field }}</div>
+                <label class="">{{ display }}</label>
+                <div class="p-1 w-full">{{ field }}</div>
                 {{ if error }}
                 <p class="text-gray-500">{{ error }}</p>
                 {{ /if }}
             </div>
             {{ /fields }}
+    {{ fields.4 }}
+    <div class="p-2 col-span-2">
+        <label class="">{{ display }}</label>
+        <div class="p-1 w-full">{{ field }}</div>
+        {{ if error }}
+        <p class="text-gray-500">{{ error }}</p>
+        {{ /if }}
+    </div>
+    {{ /fields.4 }}
 
+</div>
 
             <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
 
@@ -55,4 +64,5 @@
 </div>
 
 <!-- Partners -->
-{{ partial:layouts/panels/partners }}
+{{ partial:layouts/panels/partners bg="bg-white" tc="text-dark" }}
+
