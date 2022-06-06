@@ -172,43 +172,37 @@
     }
 }
 
-.dot {
-    @apply w-4 h-4 ml-0 mr-2 bg-white rounded-full cursor-pointer;
+
+
+.carousel-cell {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 0;
+    width: 100vw;
+    height: 100%;
 }
 
-.dot-active {
-    @apply bg-lime cursor-not-allowed;
+
+
+/* position dots in carousel */
+.flickity-page-dots {
+    bottom: 55px!important;
+
+}
+/* white circles */
+.flickity-page-dot {
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    background: white;
+    /*border: 2px solid white;*/
+}
+/* fill-in selected dot */
+.flickity-page-dot.is-selected {
+    background: hsl(155.4, 97.6%, 50%);
 }
 
-@keyframes slideOutLeft {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-
-    }
+.flickity-page-dot:focus {
+    outline: none;
+    box-shadow: 0 0 0 0 #19F;
 }
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-
-    }
-}
-
-cell {
-    transition: 2s;
-}
-
-.slideOutLeft {
-    animation: slideOutLeft 2s forwards;
-}
-
-.slideInLeft {
-    animation: slideInLeft 2s forwards;
-}
-
