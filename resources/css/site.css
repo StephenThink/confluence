@@ -35,6 +35,7 @@
     src: url("/fonts/Rota-Bold.otf") format("opentype");
 }
 
+[x-cloak] { display: none !important; }
 
 .block-heading, .footer-heading, .contact-heading, .alt-block-heading {
     @apply text-4xl font-cir-bold;

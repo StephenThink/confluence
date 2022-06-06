@@ -1,26 +1,40 @@
-<nav class="h-navbar flex justify-between items-center text-dark px-6 lg:px-24 text-3xl z-100 {{ !green_navbar ? 'bg-white' : 'bg-lime' }} w-full">
-    <a id="homelink" href="/" class="flex items-center lg:pl-24"><span class="bg-clip-text  bg-gradient-to-r {{ if !green_navbar }}hover:text-transparent from-dark-lime via-lime to-dark-lime{{ /if }} transition-colors duration-200">confluence </span><span><img class="h-8 pl-3" src="{{ !green_navbar ? '/assets/logos/company_logo.svg' : '/assets/logos/black_tick.svg' }}" alt=""></span></a>
+<nav x-data="{ navOpen: false }" @keydown.escape="navOpen = false"
+     class="h-navbar flex justify-between items-center text-dark px-6 lg:px-24 text-3xl z-100 {{ !green_navbar ? 'bg-white' : 'bg-lime' }} w-full relative">
+    <a id="homelink" href="/" class="flex items-center lg:pl-24"><span
+        class="bg-clip-text  bg-gradient-to-r {{ if !green_navbar }}hover:text-transparent from-dark-lime via-lime to-dark-lime{{ /if }} transition-colors duration-200">confluence </span><span><img
+        class="h-8 pl-3" src="{{ !green_navbar ? '/assets/logos/company_logo.svg' : '/assets/logos/black_tick.svg' }}"
+        alt=""></span></a>
+    <div>
+        <button
+                @click="navOpen = !navOpen"
+                 type="button"
+                 x-bind:aria-label="navOpen ? 'Close main menu' : 'Main menu'"
+                 aria-label="Main menu"
+                 x-bind:aria-expanded="navOpen"
+                class="block px-2 text-dark"
+                >
 
+            <svg
+                class="h-16 w-16 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    x-show="navOpen"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+                />
+                <path
+                    x-show="!navOpen"
+                    fill-rule="evenodd"
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                />
+            </svg>
 
+        </button>
 
-    <div id="ham" class="z-100">
-        <svg id="burger" class="" xmlns="http://www.w3.org/2000/svg" width="39" height="33" viewBox="0 0 39 33">
-        <g id="Group_36" data-name="Group 36" transform="translate(-1831 -32)">
-            <rect id="Rectangle_11" data-name="Rectangle 11" width="39" height="5" transform="translate(1831 32)" fill="#1f2128"/>
-            <rect id="Rectangle_20" data-name="Rectangle 20" width="39" height="5" transform="translate(1831 46)" fill="#1f2128"/>
-            <rect id="Rectangle_21" data-name="Rectangle 21" width="39" height="5" transform="translate(1831 60)" fill="#1f2128"/>
-        </g>
-    </svg>
-        <svg id="close" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 hidden transform translate-x-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-        <div id="navmenu" class="nav-menu overflow-hidden"><img src="/assets/imgs/nav-menu.svg" alt="">
-            <div class="absolute top-10 right-1/3 flex flex-col space-y-6">
-                {{ nav:main_nav }}
-                <a class="text-white text-lg uppercase hover:text-lime cursor-pointer" href="{{ url }}">{{ title }}</a>
-                {{ /nav:main_nav }}
-            </div>
-
-        </div>
+        <!--    Menu -->
     </div>
+       {{ partial:layouts/navigation/menu }}
 </nav>
