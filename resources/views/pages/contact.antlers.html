@@ -7,14 +7,14 @@
 {{ /if }}
 
 <div class="bg-gradient-to-r from-dark-lime to-lime relative h-screen text-dark overflow-hidden">
-    <div class="grid grid-cols-2 pt-56 ">
-        <div class="z-100 pt-8 px-24">
-            <div class="contact-heading tracking-wider z-100 pt-8">{{contact_heading}}</div>
-            <div class="block-content z-100 pt-4">{{contact_content}}</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 pt-12 md:pt-56 ">
+        <div class="z-100 pt-4 md:pt-8  px-16">
+            <div class="contact-heading tracking-wider z-100 ">{{contact_heading}}</div>
+            <div class="block-content z-100 pt-24 pl-8">{{contact_content}}</div>
         </div>
-            <img class="absolute z-10 bottom-[-12rem] left-[11.5rem] " src="/assets/imgs/contact_black.svg" alt="">
-            <img class="absolute z-10 top-[10rem] left-[-15rem]" src="/assets/imgs/contact_white.svg" alt="">
-        <div class="p-24 px-48">
+            <img class="hidden absolute z-10 bottom-[-12rem] left-[11.5rem]  " src="/assets/imgs/contact_black.svg" alt="">
+            <img class="absolute z-10 top-[10rem] left-[-15rem] transform-gpu translate-y-[-9rem] translate-x-[9.8rem]" src="/assets/imgs/contact_white.svg" alt="">
+        <div class="p-24 px-6 md:px-48">
             {{ form:contact }}
 
 
@@ -31,20 +31,20 @@
                 {{ /errors }}
             </div>
             {{ /if }}
-<div class="grid grid-cols-2">
+<div class="md:grid grid-cols-1 md:grid-cols-2 flex flex-col">
             {{ fields limit="4" }}
-            <div class="p-2">
-                <label class="">{{ display }}</label>
-                <div class="p-1 w-full">{{ field }}</div>
+            <div class="flex flex-row items-center space-y-6">
+                <div class="w-40 p-2 flex flex-row items-center">{{ display }}</div>
+                <div class="w-full">{{ field }}</div>
                 {{ if error }}
                 <p class="text-gray-500">{{ error }}</p>
                 {{ /if }}
             </div>
             {{ /fields }}
     {{ fields.4 }}
-    <div class="p-2 col-span-2">
+    <div class="col-span-2 py-6">
         <label class="">{{ display }}</label>
-        <div class="p-1 w-full">{{ field }}</div>
+        <div class="pt-4 w-full">{{ field }}</div>
         {{ if error }}
         <p class="text-gray-500">{{ error }}</p>
         {{ /if }}
@@ -55,7 +55,7 @@
 
             <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
 
-            <button class="rounded-full px-5 py-2 bg-white text-dark" type="submit">Submit</button>
+            <button class="rounded-full px-16 py-2 bg-white text-dark" type="submit">Submit</button>
            {{ /if }}
 
             {{ /form:contact }}

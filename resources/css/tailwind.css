@@ -10,3 +10,8 @@
 
 @import "tailwindcss/utilities";
 
+@import "fonts";
+
+@import "hero";
+
+@import "nav";
