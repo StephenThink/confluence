@@ -2936,6 +2936,67 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start(); // const ham = documen
 //
 // })
 
+var hero = document.getElementById('heroContainer');
+var cell = document.querySelectorAll('cell');
+var dot = document.querySelectorAll('.dot');
+var cellTotal = cell.length;
+var index = 0;
+var prevIndex = 0;
+
+if (hero) {
+  initCells();
+  dotAction(); // nextCell();
+}
+
+function initCells() {
+  cell[index].classList.remove('translate-x-full');
+  cell[index].classList.toggle('hidden');
+  dot[index].classList.add('dot-active');
+}
+
+function clickDot(e) {
+  console.log(e);
+}
+
+function dotAction() {
+  dot.forEach(function (dots) {
+    var dotIndex = dots.getAttribute('data-index');
+    dots.addEventListener('click', function (e) {
+      console.log(dotIndex);
+      prevIndex = index;
+      index = dotIndex;
+      dotClearing();
+      cellClearing(); // Clicking the Dot turns it active.
+
+      dot[index].classList.add('dot-active');
+    });
+  });
+}
+
+function dotClearing() {
+  dot.forEach(function (item, index) {
+    if (item.classList.contains('dot-active')) {
+      item.classList.remove('dot-active');
+    }
+  });
+}
+
+function cellClearing() {
+  cell[index].classList.add('translate-x-full');
+  cell[index].classList.remove('hidden');
+  cell[index].classList.remove('translate-x-full'); // cell[prevIndex].classList.add('slideOutLeft')
+  // cell[index].classList.remove('fadeIn')
+  // cell[index].classList.add('fadeIn')
+  // Animate and Hide the Previous Cell
+  // setTimeout(() => {
+  //     cell[prevIndex].classList.remove('slideInLeft')
+  // }, 2000);
+
+  setTimeout(function () {
+    cell[prevIndex].classList.add('hidden');
+  }, 2000);
+}
+
 /***/ }),
 
 /***/ "./resources/css/tailwind.css":

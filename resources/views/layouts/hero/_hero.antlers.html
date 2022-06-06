@@ -1,15 +1,25 @@
-<div class="h-hero w-full h-hero-height relative overflow-hidden ">
-    {{ hero_data.0 }}
+<div id="heroContainer" class="h-hero w-full h-hero-height relative overflow-hidden  ">
 
-<!--    <img src="{{ glide:hero_image width="1280" height="900" fit="crop_focal" absolute="true" }}" alt=""/>-->
-    <img class="absolute w-full h-full object-cover" src="{{glide:hero_image fit='crop_focal'}}" alt="">
-    <div class="absolute w-full h-full bg-black bg-opacity-20" alt=""></div>
-    <img id="hero-tri" class="absolute hidden md:block transition-transform md:animate-mdTriSlide lg:animate-lgTriSlide xl:animate-xlTriSlide 2xl:animate-2xlTriSlide -bottom-[55rem] -right-[10.5rem] z-101" src="/assets/imgs/hero_triangle.svg" alt="">
 
-    <div class="absolute top-1/4 md:top-1/3 lg:top-1/4 xl:top-1/2 w-10/12 pl-6 lg:pl-48 2xl:pl-56 flex flex-col justify-center text-white ">
-        <div class="z-102 text-5xl leading-tight lg:w-9/12">{{hero_title}}</div>
-        <div class="z-102 text-xl pt-3 lg:pt-36 xl:pt-3">{{hero_content}}</div>
-        <div class="z-102 pt-[2.5rem]">{{ partial:layouts/fieldsets/rounded_button}}</div>
+    {{ hero_data }}
+    <cell data-index="{{index}}" class="hidden inline-block relative h-full w-full">
+        <img class="absolute w-full h-full object-cover" src="{{glide:hero_image fit='crop_focal'}}" alt="">
+        <div class="absolute w-full h-full bg-black bg-opacity-20" alt=""></div>
+        <img id="hero-tri"
+             class="absolute hidden md:block transition-transform md:animate-mdTriSlide lg:animate-lgTriSlide xl:animate-xlTriSlide 2xl:animate-2xlTriSlide -bottom-[55rem] -right-[10.5rem] z-101"
+             src="/assets/imgs/hero_triangle.svg" alt="">
+        <div
+            class="absolute top-1/4 md:top-1/3 lg:top-1/4 xl:top-1/2 w-10/12 pl-6 lg:pl-48 2xl:pl-56 flex flex-col justify-center text-white ">
+            <div class="z-102 text-5xl leading-tight lg:w-9/12">{{hero_title}}</div>
+            <div class="z-102 text-xl pt-3 lg:pt-36 xl:pt-3">{{hero_content}}</div>
+            <div class="z-102 pt-[2.5rem]">{{ partial:layouts/fieldsets/rounded_button}}</div>
+        </div>
+    </cell>
+    {{ /hero_data }}
+
+    <div class="hero-dots absolute bottom-10 flex justify-center items-center w-full bg-transparent left-0 right-0">
+        {{ hero_data}}
+        <div class="dot" data-index="{{index}}"></div>
+        {{ /hero_data}}
     </div>
-    {{ /hero_data.0 }}
 </div>
