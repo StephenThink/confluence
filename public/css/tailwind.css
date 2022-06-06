@@ -1205,6 +1205,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #0FBAA9;
 }
 
+.to-lime {
+  --tw-gradient-to: #03FC96;
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
