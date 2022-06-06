@@ -1690,6 +1690,15 @@ https://flickity.metafizzy.co
 
 @media (min-width: 640px) {
 
+  .sm\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:w-8\/12 {
     width: 66.666667%;
   }
@@ -1715,6 +1724,48 @@ https://flickity.metafizzy.co
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .sm\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .sm\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .sm\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .sm\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .sm\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .sm\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .sm\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .sm\:pt-48 {
+    padding-top: 12rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
   }
 }
 
@@ -1752,6 +1803,11 @@ https://flickity.metafizzy.co
 
   .md\:translate-y-\[-3\.3rem\] {
     --tw-translate-y: -3.3rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:translate-x-\[5rem\] {
+    --tw-translate-x: 5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1808,6 +1864,10 @@ https://flickity.metafizzy.co
   .md\:pt-8 {
     padding-top: 2rem;
   }
+
+  .md\:pt-72 {
+    padding-top: 18rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1816,8 +1876,36 @@ https://flickity.metafizzy.co
     top: 25%;
   }
 
+  .lg\:bottom-\[-12rem\] {
+    bottom: -12rem;
+  }
+
+  .lg\:left-\[11\.5rem\] {
+    left: 11.5rem;
+  }
+
+  .lg\:bottom-\[-5rem\] {
+    bottom: -5rem;
+  }
+
+  .lg\:left-\[5\.5rem\] {
+    left: 5.5rem;
+  }
+
+  .lg\:bottom-\[-1rem\] {
+    bottom: -1rem;
+  }
+
   .lg\:block {
     display: block;
+  }
+
+  .lg\:h-\[90\%\] {
+    height: 90%;
+  }
+
+  .lg\:h-\[67\%\] {
+    height: 67%;
   }
 
   .lg\:w-10\/12 {
@@ -1826,6 +1914,10 @@ https://flickity.metafizzy.co
 
   .lg\:w-9\/12 {
     width: 75%;
+  }
+
+  .lg\:w-\[90\%\] {
+    width: 90%;
   }
 
   .lg\:translate-x-\[-8\.8rem\] {
@@ -1865,6 +1957,26 @@ https://flickity.metafizzy.co
 
   .lg\:translate-y-\[20\.5rem\] {
     --tw-translate-y: 20.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:translate-y-0 {
+    --tw-translate-y: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:translate-y-\[9rem\] {
+    --tw-translate-y: 9rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:translate-y-\[-10rem\] {
+    --tw-translate-y: -10rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1954,6 +2066,14 @@ https://flickity.metafizzy.co
   .lg\:pl-24 {
     padding-left: 6rem;
   }
+
+  .lg\:pt-56 {
+    padding-top: 14rem;
+  }
+
+  .lg\:pt-96 {
+    padding-top: 24rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1973,6 +2093,10 @@ https://flickity.metafizzy.co
 
   .xl\:w-\[14rem\] {
     width: 14rem;
+  }
+
+  .xl\:w-\[80\%\] {
+    width: 80%;
   }
 
   .xl\:-translate-x-10 {
@@ -2041,8 +2165,17 @@ https://flickity.metafizzy.co
     padding-bottom: 5rem;
   }
 
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .xl\:pt-3 {
     padding-top: 0.75rem;
+  }
+
+  .xl\:pt-56 {
+    padding-top: 14rem;
   }
 }
 
@@ -2054,6 +2187,14 @@ https://flickity.metafizzy.co
 
   .\32xl\:w-\[17rem\] {
     width: 17rem;
+  }
+
+  .\32xl\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .\32xl\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .\32xl\:translate-x-0 {
@@ -2129,6 +2270,14 @@ https://flickity.metafizzy.co
 
   .\32xl\:pl-56 {
     padding-left: 14rem;
+  }
+
+  .\32xl\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .\32xl\:pl-24 {
+    padding-left: 6rem;
   }
 }
 
