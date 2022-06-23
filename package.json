@@ -21,8 +21,10 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@barba/core": "^2.9.7",
         "alpinejs": "^3.10.2",
         "flickity": "^3.0.0",
-        "flickity-fade": "^2.0.0"
+        "flickity-fade": "^2.0.0",
+        "gsap": "^3.10.4"
     }
 }

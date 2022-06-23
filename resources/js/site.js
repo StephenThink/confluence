@@ -1,11 +1,28 @@
 // This is all you.
+import { gsap } from "gsap";
 import Alpine from 'alpinejs'
 
 window.Alpine = Alpine
 
 Alpine.start()
 
+import barba from '@barba/core';
 
+barba.init({
+    transitions: [{
+        name: 'opacity-transition',
+        leave(data) {
+            return gsap.to(data.current.container, {
+                opacity: 0
+            });
+        },
+        enter(data) {
+            return gsap.from(data.next.container, {
+                opacity: 0
+            });
+        }
+    }]
+});
 // const ham = document.getElementById('ham');
 // const navmenu = document.getElementById('navmenu');
 // const burger = document.getElementById('burger');
