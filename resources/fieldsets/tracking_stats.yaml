@@ -25,11 +25,33 @@ fields:
                 instructions_position: above
                 read_only: false
             -
+              handle: before_figure
+              field:
+                input_type: text
+                antlers: false
+                display: 'Before Figure'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                read_only: false
+            -
               handle: stat_figure
               field:
                 input_type: text
                 antlers: false
                 display: 'Stat Figure'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                read_only: false
+            -
+              handle: after_figure
+              field:
+                input_type: text
+                antlers: false
+                display: 'After Figure'
                 type: text
                 icon: text
                 listable: hidden

@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
-        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-    </head>
-    <body class="bg-white leading-normal font-be-semi-bold w-full relative max-w-full overflow-x-hidden
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title ?? site:name }}</title>
+    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+</head>
+<body class="bg-white leading-normal font-be-semi-bold w-full relative max-w-full overflow-x-hidden
     @env(['local','staging'] )
 debug-screens
 @endenv" data-barba="wrapper">
 
-    <main data-barba="container" data-barba-namespace="home" class="" >
-        {{partial:layouts/navigation/_main_nav}}
+<main data-barba="container" data-barba-namespace="home" class="">
+    {{partial:layouts/navigation/_main_nav}}
         {{ template_content }}
-    </main>
-    {{partial:layouts/footer/_main_footer}}
-        <script src="{{ mix src='/js/site.js' }}"></script>
-    </body>
+</main>
+{{partial:layouts/footer/_main_footer}}
+<script src="{{ mix src='/js/site.js' }}"></script>
+</body>
 </html>

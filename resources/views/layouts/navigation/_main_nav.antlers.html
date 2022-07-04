@@ -1,8 +1,8 @@
 <nav x-data="{ navOpen: false }" @keydown.escape="navOpen = false"
-     class="h-navbar flex justify-between items-center text-dark px-6 lg:px-24 text-3xl z-100 {{ !green_navbar ? 'bg-white' : 'bg-gradient-to-r from-dark-lime to-lime' }} w-full relative">
+     class="h-navbar flex justify-between items-center text-dark px-6 lg:px-24 text-4xl z-100 {{ !green_navbar ? 'bg-white' : 'bg-gradient-to-r from-dark-lime to-lime' }} w-full relative">
     <a id="homelink" href="/" class="flex items-center lg:pl-24"><span
-        class="bg-clip-text  bg-gradient-to-r {{ if !green_navbar }}hover:text-transparent from-dark-lime via-lime to-dark-lime{{ /if }} transition-colors duration-200">confluence </span><span><img
-        class="h-8 pl-3" src="{{ !green_navbar ? '/assets/logos/company_logo.svg' : '/assets/logos/black_tick.svg' }}"
+        class="text-black">confluence </span><span><img
+        class="h-8 pl-3 mt-navLogo" src="{{ !green_navbar ? '/assets/logos/company_logo.svg' : '/assets/logos/black_tick.svg' }}"
         alt=""></span></a>
     <div>
         <button

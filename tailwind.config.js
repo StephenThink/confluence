@@ -6,6 +6,30 @@ module.exports = {
         './content/**/*.md'
     ],
     theme: {
+        container: {
+            padding: {
+                DEFAULT: '1rem',
+                sm: '2rem',
+                lg: '4rem',
+                xl: '5rem',
+                '2xl': '6rem',
+                '3xl': '8rem',
+                '4xl': '10rem',
+            },
+            center: true,
+            screens: {
+                "none": "100%",
+                sm: '640px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+                '2xl': '1536px',
+                '3xl': '1600px',
+                '4xl': '1920px',
+                '5xl': '2240px',
+                '6xl': '2560px',
+            },
+        },
         debugScreens: {
             position: ["bottom", "right"],
         },
@@ -19,6 +43,12 @@ module.exports = {
             "rota": ['rota'],
         },
         extend: {
+            screens: {
+                '3xl': '1600px',
+                '4xl': '1920px',
+                '5xl': '2240px',
+                '6xl': '2560px',
+            },
             colors: {
                 lime: "#03FC96",
                 'dark-lime': "#0FBAA9",
@@ -26,6 +56,7 @@ module.exports = {
                 dark: "#1F2128",
             },
             spacing: {
+                "navLogo": '0.6rem',
                 navbar: '103px',
                 hero: '977px',
                 partners: '302px',
@@ -33,6 +64,7 @@ module.exports = {
                 panel: '400px',
                 aboutimagetop: '29rem',
                 "hero-height": "calc(100vh - 103px)",
+                18: "4.5rem",
             },
             zIndex: {
                 '99': '99',

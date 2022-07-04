@@ -1,6 +1,6 @@
 // This is all you.
 import { gsap } from "gsap";
-import Alpine from 'alpinejs'
+import Alpine from 'alpinejs';
 
 window.Alpine = Alpine
 
@@ -113,7 +113,7 @@ if( el ) {
         prevNextButtons: false,
         fade: true,
         draggable: false,
-        autoPlay: true,
+        // autoPlay: true,
         autoPlay: 10000,
         pauseAutoPlayOnHover: false,
         lazyLoad: true,

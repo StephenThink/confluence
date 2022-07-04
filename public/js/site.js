@@ -2938,8 +2938,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _barba_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_barba_core__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var flickity_fade__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flickity-fade */ "./node_modules/flickity-fade/flickity-fade.js");
 /* harmony import */ var flickity_fade__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flickity_fade__WEBPACK_IMPORTED_MODULE_3__);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 // This is all you.
 
 
@@ -3042,16 +3040,17 @@ _barba_core__WEBPACK_IMPORTED_MODULE_1___default().init({
 var el = document.querySelector('.main-carousel');
 
 if (el) {
-  var _Flickity;
-
-  var flkty = new (flickity_fade__WEBPACK_IMPORTED_MODULE_3___default())(el, (_Flickity = {
+  var flkty = new (flickity_fade__WEBPACK_IMPORTED_MODULE_3___default())(el, {
     // options
     pageDots: true,
     prevNextButtons: false,
     fade: true,
     draggable: false,
-    autoPlay: true
-  }, _defineProperty(_Flickity, "autoPlay", 10000), _defineProperty(_Flickity, "pauseAutoPlayOnHover", false), _defineProperty(_Flickity, "lazyLoad", true), _Flickity));
+    // autoPlay: true,
+    autoPlay: 10000,
+    pauseAutoPlayOnHover: false,
+    lazyLoad: true
+  });
 }
 
 /***/ }),

@@ -5,7 +5,7 @@ title: Home
 template: home
 author: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
 updated_by: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
-updated_at: 1654097673
+updated_at: 1656681225
 hero_data:
   -
     hero_title: 'Secure Payments & Clearing Services'
@@ -39,22 +39,28 @@ stats:
     enabled: true
   -
     stat_icon: icons/money.svg
-    stat_figure: £500m
+    stat_figure: '500'
     stat_description: 'Dispensed per month'
     type: tracking_stats
     enabled: true
+    before_figure: £
+    after_figure: m
   -
     stat_icon: icons/currency.svg
-    stat_figure: £100m
+    stat_figure: '100'
     stat_description: Turnover
     type: tracking_stats
     enabled: true
+    before_figure: £
+    after_figure: m
   -
     stat_icon: icons/magglass.svg
-    stat_figure: £20m
+    stat_figure: '20'
     stat_description: EBITDA
     type: tracking_stats
     enabled: true
+    before_figure: £
+    after_figure: m
 more_image: imgs/home_more.svg
 more_heading: 'More about confluence'
 more_content: 'confluence has an experienced management team seeking to disrupt the existing Clearing Bank  sector in the UK. The existing market is dominated by the traditional banking sector utilising  outdated technologies and focused on traditional payment methods.'

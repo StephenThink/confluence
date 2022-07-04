@@ -5,22 +5,26 @@
 {{ /if }}
 
 {{ if show_topleft }}
-<img id="hero-tri" class="absolute hidden lg:block -top-[5.5rem] left-[-10.5rem] transform-gpu xl:-translate-x-10 2xl:translate-x-0" src="/assets/imgs/quarter-jagged.svg" alt="">
+<img id="hero-tri"
+     class="absolute hidden lg:block -top-[3.5rem] left-[-7.5rem] transform-gpu  z-[1001]"
+     src="/assets/imgs/quarter-jagged.svg" alt="">
 {{ /if }}
 
 <!-- Mission -->
-<div class="bg-dark text-white panel-size flex flex-col space-y-4">
-    <div class="block-heading">{{mission_heading}}</div>
-    <div class="block-subheading">{{mission_subheading}}</div>
-    <div class="block-content pb-4">{{mission_text | nl2br}}</div>
+<div class="bg-dark text-white panel-size ">
+    <div class="4xl:w-8/12 flex flex-col space-y-4">
+        <div class="block-heading">{{mission_heading}}</div>
+        <div class="block-subheading">{{mission_subheading}}</div>
+        <div class="block-content">{{mission_text | nl2br}}</div>
+    </div>
 </div>
 
 
 <!-- Tracking -->
 
-<div class="bg-white text-dark panel-size flex flex-col space-y-4">
+<div class="bg-white text-dark panel-size flex flex-col space-y-4" id="trackMe">
     <div class="block-heading">{{track_heading}}</div>
-    <div class="block-content pb-4">{{track_content | nl2br}}</div>
+    <div class="block-content ">{{track_content | nl2br}}</div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-y-4 md:space-y-0 space-x-2 mx-auto xl:mx-0">
         {{ stats }}
         {{ partial:layouts/fieldsets/tracking_stats }}
@@ -28,14 +32,16 @@
     </div>
 </div>
 
+
 <!-- More -->
 
-<div class="bg-dark-lime text-white panel-size grid grid-cols-1 md:grid-cols-2">
+<div class="bg-dark-lime text-white pb-10 grid grid-cols-1 md:grid-cols-2">
     <div class="z-10 relative flex items-center">
-        <img class="z-10" src="{{more_image}}" alt="">
-        <div class="absolute hidden md:rotate-[270deg]lg:block top-0 right-0  z-1"><img src="/assets/imgs/quarter.svg" alt=""></div>
+        <img class="absolute top-10 left-14 " src="{{more_image}}" alt="">
+        <div class="absolute md:rotate-[270deg]lg:block top-14 right-10  z-1"><img src="/assets/imgs/quarter.svg"
+                                                                                   alt=""></div>
     </div>
-    <div class="flex flex-col space-y-4 px-6 lg:p-12">
+    <div class="flex flex-col py-4 space-y-4 p-6 4xl:pl-12 4xl:pr-40  4xl:pt-14 4xl:pb-14">
         <div class="block-heading">{{more_heading}}</div>
         <div class="">{{more_content}}</div>
         <div class="z-10 pt-[2.5rem]">{{ partial:layouts/fieldsets/rounded_button}}</div>
@@ -46,3 +52,6 @@
 
 <!-- Partners -->
 {{ partial:layouts/panels/partners bg="bg-white" tc="text-dark" }}
+
+<script defer src="js/countUp.js"></script>
+</div>
