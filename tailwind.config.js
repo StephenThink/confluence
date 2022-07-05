@@ -65,6 +65,7 @@ module.exports = {
                 aboutimagetop: '29rem',
                 "hero-height": "calc(100vh - 103px)",
                 18: "4.5rem",
+                "halfScreen" : "50vh",
             },
             zIndex: {
                 '99': '99',

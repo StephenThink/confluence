@@ -1,5 +1,5 @@
 <div x-cloak
-    class="w-full md:w-1/4 bg-black z-1000 top-navbar absolute right-0 flex justify-center rounded-bl-full"
+    class="w-full md:w-1/4 z-1000 top-navbar absolute right-0 flex justify-end pr-24 "
     x-show="navOpen"
     @click.away="navOpen = false"
     x-transition:enter="transition ease-linear duration-200 transform"
@@ -9,6 +9,7 @@
     x-transition:leave-start="translate-x-0"
     x-transition:leave-end="translate-x-12"
 >
+    {{ svg src="navmenu" class="absolute top-1 right-1 4xl:right-[-12rem] 4xl:top-0"}}
         <ul
             class="flex flex-col list-reset space-y-6 z-1000 py-12"
         >

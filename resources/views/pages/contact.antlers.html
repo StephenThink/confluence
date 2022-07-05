@@ -6,17 +6,19 @@
 <img id="hero-tri" class="absolute -top-10 left-[-7.5rem]" src="/assets/imgs/quarter-jagged.svg" alt="">
 {{ /if }}
 
-<div class="bg-gradient-to-r from-dark-lime to-lime relative h-screen text-dark overflow-hidden">
+<div class="bg-lime relative h-hero-height text-dark overflow-hidden">
     <div class="grid grid-cols-1 lg:grid-cols-2 pt-12">
-        <div class="z-100 pt-4  sm:pt-16 px-16 sm:px-24 xl:px-16 2xl:pl-24">
+        <div class="z-100 pt-4  sm:pt-16 px-16 sm:px-24 xl:px-16 2xl:pl-24 4xl:px-48">
             <div class="contact-heading tracking-wider z-100 ">{{contact_heading}}</div>
             <div class="block-content z-100 pt-24 pl-8 sm:pl-0 sm:pt-4">{{contact_content}}</div>
         </div>
-            <img class="hidden lg:block absolute z-10 bottom-[-12rem] left-[11.5rem] lg:h-[67%] lg:bottom-[-1rem] lg:left-[5.5rem] " src="/assets/imgs/contact_black.svg" alt="">
-            <img class="absolute z-10 top-[10rem] left-[-15rem] transform-gpu translate-y-[-9rem] translate-x-[9.8rem] md:translate-x-[5rem] lg:translate-y-[-10rem] lg:translate-x-0 lg:w-[90%] xl:w-[80%] 2xl:w-[60%]" src="/assets/imgs/contact_white.svg" alt="">
+<!--        Black Shape -->
+            <img class="hidden lg:block absolute z-10 top-0 left-0 4xl:translate-x-[10.5rem] 4xl:translate-y-[28rem] " src="/assets/imgs/contact_black.svg" alt="">
+<!--        White Shape -->
+            <img class="absolute z-10 top-[10rem] left-[-15rem] transform-gpu translate-y-[-9rem] translate-x-[9.8rem] md:translate-x-[5rem] 4xl:translate-x-4" src="/assets/imgs/contact_white.svg" alt="">
+<!--       Right hand side of the page -->
         <div class="p-24 px-6 sm:pt-48 md:pt-72 lg:pt-96 2xl:w-10/12">
             {{ form:contact }}
-
 
             {{ if success }}
             <div class="bg-green-300 text-white p-2">
@@ -33,8 +35,8 @@
             {{ /if }}
 <div class="md:grid grid-cols-1 md:grid-cols-2 flex flex-col">
             {{ fields limit="4" }}
-            <div class="flex flex-row items-center space-y-6">
-                <div class="w-40 p-2 flex flex-row items-center">{{ display }}</div>
+            <div class="flex flex-row items-center space-y-6 even:pl-5 pb-5">
+                <div class="w-40 flex flex-row items-center">{{ display }} {{ if validate }} <span class="text-2xl font-bold">*</span> {{ /if }} </div>
                 <div class="w-full">{{ field }}</div>
                 {{ if error }}
                 <p class="text-gray-500">{{ error }}</p>

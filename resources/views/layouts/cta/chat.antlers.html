@@ -1,10 +1,10 @@
 {{ if chat_light }}
 <a href="/contact" id="chat" class="fixed hidden md:block top-1/2 right-[-20rem] animate-chat z-1000">
-    <img src="/assets/imgs/chat.svg" alt="">
+    {{ svg src="chat" }}
 </a>
 {{ else }}
 <a href="/contact" id="chat" class="fixed hidden md:block top-1/2 right-[-20rem] animate-chat z-1000">
-    <img src="/assets/imgs/dark_chat.svg" alt="">
+    {{ svg src="dark_chat" }}
 </a>
 
 {{ /if }}
