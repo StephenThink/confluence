@@ -1,4 +1,4 @@
-<div class="h-hero w-full h-hero-height relative overflow-hidden  ">
+<div class="w-full h-hero-height relative overflow-hidden  ">
 
     <div class="main-carousel h-hero-height" >
         {{ hero_data }}
@@ -9,10 +9,10 @@
                  class="absolute hidden md:block transition-transform md:animate-mdTriSlide lg:animate-lgTriSlide xl:animate-xlTriSlide 2xl:animate-2xlTriSlide -bottom-[55rem] -right-[10.5rem] z-101"
                  src="/assets/imgs/hero_triangle.svg" alt="">
             <div
-                class="absolute top-1/4 md:top-1/3 lg:top-1/4 xl:top-1/2 w-10/12 pl-6 lg:pl-48 2xl:pl-56 flex flex-col justify-center text-white ">
+                class="h-hero-height w-10/12 pl-6 lg:pl-48 2xl:pl-56 flex flex-col justify-center text-white ">
                 <div class="z-102 text-5xl leading-tight lg:w-9/12">{{hero_title}}</div>
-                <div class="z-102 text-xl pt-3 lg:pt-36 xl:pt-3">{{hero_content}}</div>
-                <div class="z-102 pt-[2.5rem]">{{ partial:layouts/fieldsets/rounded_button}}</div>
+                <div class="z-102 text-xl pt-8">{{hero_content}}</div>
+                <div class="z-102 pt-10">{{ partial:layouts/fieldsets/rounded_button}}</div>
             </div>
         </div>
         {{ /hero_data }}

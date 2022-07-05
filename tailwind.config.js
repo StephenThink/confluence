@@ -58,7 +58,7 @@ module.exports = {
             spacing: {
                 "navLogo": '0.6rem',
                 navbar: '103px',
-                hero: '977px',
+                hero: '100vh',
                 partners: '302px',
                 footer: '325px',
                 panel: '400px',

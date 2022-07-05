@@ -24,7 +24,7 @@
 <div class="bg-white text-dark panel-size flex flex-col space-y-4" id="trackMe">
     <div class="block-heading">{{track_heading}}</div>
     <div class="block-content ">{{track_content | nl2br}}</div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-y-4 md:space-y-0 space-x-2 mx-auto xl:mx-0">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 content-around mx-auto sm:mx-0 ">
         {{ stats }}
         {{ partial:layouts/fieldsets/tracking_stats }}
         {{ /stats }}
@@ -34,13 +34,14 @@
 
 <!-- More -->
 
-<div class="bg-dark-lime text-white pb-10 grid grid-cols-1 md:grid-cols-2">
-    <div class="z-10 relative flex items-center">
-        <img class="absolute top-10 left-14 " src="{{more_image}}" alt="">
-        <div class="absolute md:rotate-[270deg]lg:block top-14 right-10  z-1"><img src="/assets/imgs/quarter.svg"
-                                                                                   alt=""></div>
+<div class="bg-dark-lime text-white grid grid-cols-1 lg:grid-cols-2 xl:-mb-8">
+    <div class="z-10 relative flex items-center ">
+<!--        <img class="pt-8 lg:pt-0 xl:pt-8 4xl:pl-24 md:mx-auto" src="{{more_image}}" alt="">-->
+        {{ svg src="homeaboutshape" class="pt-8 lg:pt-0 xl:pt-8 4xl:pl-24 md:mx-auto" }}
+<!--        <div class="hidden absolute  3xl:block 3xl:top-[5.5rem] 4xl:top-14 3xl:right-10 3xl:w-[15%]  z-1"><img src="/assets/imgs/quarter.svg"-->
+<!--                                                                                   alt=""></div>-->
     </div>
-    <div class="flex flex-col py-4 space-y-4 p-6 4xl:pl-12 4xl:pr-40  4xl:pt-14 4xl:pb-14">
+    <div class="flex flex-col py-4 space-y-4 p-6 4xl:pl-12 4xl:pr-40  sm:py-14">
         <div class="block-heading">{{more_heading}}</div>
         <div class="">{{more_content}}</div>
         <div class="z-10 pt-[2.5rem]">{{ partial:layouts/fieldsets/rounded_button}}</div>

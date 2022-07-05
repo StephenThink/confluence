@@ -1042,14 +1042,6 @@ https://flickity.metafizzy.co
   left: 0px;
 }
 
-.bottom-\[-12rem\] {
-  bottom: -12rem;
-}
-
-.left-\[11\.5rem\] {
-  left: 11.5rem;
-}
-
 .top-\[10rem\] {
   top: 10rem;
 }
@@ -1106,6 +1098,10 @@ https://flickity.metafizzy.co
   right: 0.25rem;
 }
 
+.right-\[-12rem\] {
+  right: -12rem;
+}
+
 .z-\[1001\] {
   z-index: 1001;
 }
@@ -1130,13 +1126,14 @@ https://flickity.metafizzy.co
   grid-column: span 2 / span 2;
 }
 
-.-m-16 {
-  margin: -4rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .ml-2 {
@@ -1147,12 +1144,20 @@ https://flickity.metafizzy.co
   margin-top: 0.6rem;
 }
 
+.-mr-16 {
+  margin-right: -4rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
 
-.-mr-16 {
-  margin-right: -4rem;
+.-ml-16 {
+  margin-left: -4rem;
+}
+
+.-mb-8 {
+  margin-bottom: -2rem;
 }
 
 .block {
@@ -1175,8 +1180,8 @@ https://flickity.metafizzy.co
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
+.h-hero-height {
+  height: calc(100vh - 103px);
 }
 
 .h-halfScreen {
@@ -1184,11 +1189,7 @@ https://flickity.metafizzy.co
 }
 
 .h-hero {
-  height: 977px;
-}
-
-.h-hero-height {
-  height: calc(100vh - 103px);
+  height: 100vh;
 }
 
 .h-full {
@@ -1225,6 +1226,22 @@ https://flickity.metafizzy.co
 
 .w-6\/12 {
   width: 50%;
+}
+
+.w-\[145\%\] {
+  width: 145%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-\[2\] {
+  width: 2;
+}
+
+.w-\[43\.5rem\] {
+  width: 43.5rem;
 }
 
 .max-w-full {
@@ -1330,6 +1347,14 @@ https://flickity.metafizzy.co
   flex-direction: column-reverse;
 }
 
+.content-start {
+  align-content: flex-start;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1370,10 +1395,10 @@ https://flickity.metafizzy.co
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1386,10 +1411,6 @@ https://flickity.metafizzy.co
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.rounded-bl-full {
-  border-bottom-left-radius: 9999px;
 }
 
 .border {
@@ -1424,6 +1445,11 @@ https://flickity.metafizzy.co
   background-color: rgb(15 186 169 / var(--tw-bg-opacity));
 }
 
+.bg-lime {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 252 150 / var(--tw-bg-opacity));
+}
+
 .bg-green-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
@@ -1432,11 +1458,6 @@ https://flickity.metafizzy.co
 .bg-red-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
-.bg-lime {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 252 150 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -1448,26 +1469,8 @@ https://flickity.metafizzy.co
   background-color: transparent;
 }
 
-.bg-indigo-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 231 255 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-dark-lime {
-  --tw-gradient-from: #0FBAA9;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(15 186 169 / 0));
-}
-
-.to-lime {
-  --tw-gradient-to: #03FC96;
 }
 
 .fill-current {
@@ -1545,6 +1548,21 @@ https://flickity.metafizzy.co
   padding-bottom: 3rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1569,6 +1587,10 @@ https://flickity.metafizzy.co
   padding-left: 2rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1585,16 +1607,16 @@ https://flickity.metafizzy.co
   padding-left: 0.75rem;
 }
 
+.pr-24 {
+  padding-right: 6rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pr-24 {
-  padding-right: 6rem;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .align-middle {
@@ -1607,6 +1629,11 @@ https://flickity.metafizzy.co
 
 .font-cir-bold {
   font-family: cir-bold;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -1637,11 +1664,6 @@ https://flickity.metafizzy.co
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -1687,11 +1709,6 @@ https://flickity.metafizzy.co
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .opacity-75 {
@@ -1852,6 +1869,15 @@ https://flickity.metafizzy.co
 
 @media (min-width: 640px) {
 
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .sm\:w-4 {
+    width: 1rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1859,6 +1885,11 @@ https://flickity.metafizzy.co
   .sm\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .sm\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .sm\:pt-16 {
@@ -1876,12 +1907,29 @@ https://flickity.metafizzy.co
   .sm\:pt-48 {
     padding-top: 12rem;
   }
+
+  .sm\:pt-14 {
+    padding-top: 3.5rem;
+  }
+
+  .sm\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 768px) {
 
   .md\:top-1\/3 {
     top: 33.333333%;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:block {
@@ -1896,8 +1944,17 @@ https://flickity.metafizzy.co
     width: 25%;
   }
 
+  .md\:w-6 {
+    width: 1.5rem;
+  }
+
   .md\:translate-x-\[5rem\] {
     --tw-translate-x: 5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:rotate-\[270deg\] {
+    --tw-rotate: 270deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1942,6 +1999,17 @@ https://flickity.metafizzy.co
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .md\:pt-72 {
     padding-top: 18rem;
   }
@@ -1949,32 +2017,36 @@ https://flickity.metafizzy.co
 
 @media (min-width: 1024px) {
 
-  .lg\:bottom-\[-1rem\] {
-    bottom: -1rem;
-  }
-
-  .lg\:left-\[5\.5rem\] {
-    left: 5.5rem;
-  }
-
   .lg\:top-1\/4 {
     top: 25%;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
   }
 
   .lg\:block {
     display: block;
   }
 
-  .lg\:h-\[67\%\] {
-    height: 67%;
-  }
-
-  .lg\:w-\[90\%\] {
-    width: 90%;
-  }
-
   .lg\:w-9\/12 {
     width: 75%;
+  }
+
+  .lg\:w-\[175\%\] {
+    width: 175%;
+  }
+
+  .lg\:w-\[220\%\] {
+    width: 220%;
+  }
+
+  .lg\:w-8 {
+    width: 2rem;
+  }
+
+  .lg\:w-12 {
+    width: 3rem;
   }
 
   .lg\:translate-x-\[-8\.8rem\] {
@@ -1987,13 +2059,8 @@ https://flickity.metafizzy.co
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:translate-y-\[-10rem\] {
-    --tw-translate-y: -10rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:translate-x-0 {
-    --tw-translate-x: 0px;
+  .lg\:rotate-\[270deg\] {
+    --tw-rotate: 270deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -2036,6 +2103,10 @@ https://flickity.metafizzy.co
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -2052,6 +2123,12 @@ https://flickity.metafizzy.co
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:px-24 {
@@ -2083,6 +2160,10 @@ https://flickity.metafizzy.co
   .lg\:pl-24 {
     padding-left: 6rem;
   }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2096,8 +2177,20 @@ https://flickity.metafizzy.co
     margin-right: 0px;
   }
 
-  .xl\:w-\[80\%\] {
-    width: 80%;
+  .xl\:-mb-8 {
+    margin-bottom: -2rem;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:w-10 {
+    width: 2.5rem;
+  }
+
+  .xl\:w-14 {
+    width: 3.5rem;
   }
 
   @-webkit-keyframes xlTriSlide {
@@ -2131,6 +2224,10 @@ https://flickity.metafizzy.co
             animation: xlTriSlide 2s 3s ease-in-out forwards;
   }
 
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -2139,6 +2236,24 @@ https://flickity.metafizzy.co
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .xl\:px-20 {
@@ -2159,16 +2274,28 @@ https://flickity.metafizzy.co
   .xl\:pt-3 {
     padding-top: 0.75rem;
   }
+
+  .xl\:pt-8 {
+    padding-top: 2rem;
+  }
 }
 
 @media (min-width: 1536px) {
 
-  .\32xl\:w-\[60\%\] {
-    width: 60%;
-  }
-
   .\32xl\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .\32xl\:w-\[145\%\] {
+    width: 145%;
+  }
+
+  .\32xl\:w-\[175\%\] {
+    width: 175%;
+  }
+
+  .\32xl\:w-16 {
+    width: 4rem;
   }
 
   .\32xl\:translate-x-\[-5\.8rem\] {
@@ -2226,23 +2353,48 @@ https://flickity.metafizzy.co
   }
 }
 
+@media (min-width: 1600px) {
+
+  .\33xl\:right-10 {
+    right: 2.5rem;
+  }
+
+  .\33xl\:top-\[5\.5rem\] {
+    top: 5.5rem;
+  }
+
+  .\33xl\:block {
+    display: block;
+  }
+
+  .\33xl\:w-\[15\%\] {
+    width: 15%;
+  }
+
+  .\33xl\:w-\[125\%\] {
+    width: 125%;
+  }
+
+  .\33xl\:w-\[145\%\] {
+    width: 145%;
+  }
+
+  .\33xl\:w-20 {
+    width: 5rem;
+  }
+
+  .\33xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .\33xl\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
 @media (min-width: 1920px) {
-
-  .\34xl\:right-\[12\.8rem\] {
-    right: 12.8rem;
-  }
-
-  .\34xl\:top-\[13\.8rem\] {
-    top: 13.8rem;
-  }
-
-  .\34xl\:right-\[-12\.8rem\] {
-    right: -12.8rem;
-  }
-
-  .\34xl\:top-\[-13\.8rem\] {
-    top: -13.8rem;
-  }
 
   .\34xl\:right-\[-12rem\] {
     right: -12rem;
@@ -2252,23 +2404,20 @@ https://flickity.metafizzy.co
     top: 0px;
   }
 
+  .\34xl\:-top-14 {
+    top: -3.5rem;
+  }
+
+  .\34xl\:top-14 {
+    top: 3.5rem;
+  }
+
   .\34xl\:w-8\/12 {
     width: 66.666667%;
   }
 
-  .\34xl\:translate-x-4 {
-    --tw-translate-x: 1rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .\34xl\:translate-x-6 {
-    --tw-translate-x: 1.5rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .\34xl\:translate-y-5 {
-    --tw-translate-y: 1.25rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .\34xl\:w-24 {
+    width: 6rem;
   }
 
   .\34xl\:translate-x-\[10\.5rem\] {
@@ -2278,6 +2427,11 @@ https://flickity.metafizzy.co
 
   .\34xl\:translate-y-\[28rem\] {
     --tw-translate-y: 28rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\34xl\:translate-x-4 {
+    --tw-translate-x: 1rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -2291,19 +2445,9 @@ https://flickity.metafizzy.co
     padding-right: 12rem;
   }
 
-  .\34xl\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .\34xl\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .\34xl\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .\34xl\:px-24 {
@@ -2335,16 +2479,34 @@ https://flickity.metafizzy.co
     padding-right: 7rem;
   }
 
-  .\34xl\:pt-12 {
-    padding-top: 3rem;
-  }
-
-  .\34xl\:pb-0 {
-    padding-bottom: 0px;
-  }
-
   .\34xl\:pb-10 {
     padding-bottom: 2.5rem;
+  }
+
+  .\34xl\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .\34xl\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .\34xl\:pt-8 {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 2240px) {
+
+  .\35xl\:w-28 {
+    width: 7rem;
+  }
+}
+
+@media (min-width: 2560px) {
+
+  .\36xl\:w-32 {
+    width: 8rem;
   }
 }
 
