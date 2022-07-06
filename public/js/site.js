@@ -2949,15 +2949,12 @@ _barba_core__WEBPACK_IMPORTED_MODULE_1___default().init({
     name: 'opacity-transition',
     leave: function leave(data) {
       return gsap__WEBPACK_IMPORTED_MODULE_2__.gsap.to(data.current.container, {
-        opacity: 0,
-        y: 100,
-        duration: 1.5
+        opacity: 0
       });
     },
     enter: function enter(data) {
       return gsap__WEBPACK_IMPORTED_MODULE_2__.gsap.from(data.next.container, {
-        opacity: 1,
-        duration: 1.5
+        opacity: 0
       });
     },
     once: function once(data) {

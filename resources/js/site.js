@@ -18,7 +18,7 @@ barba.init({
         },
         enter(data) {
             return gsap.from(data.next.container, {
-                opacity: 1,
+                opacity: 0,
             });
         },
         once(data) {
