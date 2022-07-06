@@ -8,18 +8,18 @@
 
 
 <div class="flex flex-col-reverse lg:flex-row z-10 lg:items-center ">
-    <div class="flex flex-col space-y-4 w-full z-10 px-6 py-10  lg:px-24 lg:py-12 xl:px-20 xl:py-20  4xl:pl-48 4xl:pr-28 4xl:py-24 relative">
+    <div
+        class="flex flex-col space-y-4 w-full z-10 px-6 py-10  lg:px-24 lg:py-12 xl:px-20 xl:py-20  4xl:pl-48 4xl:pr-28 4xl:py-24 relative">
         <div class="lg:pt-48 block-heading z-10">{{ heading }}</div>
         <div class="block-subheading z-10">{{ subheading }}</div>
         <div class="block-content  z-10">{{ content | nl2br }}</div>
         <div>{{partial:layouts/fieldsets/_text_link}}</div>
-        <img src="/assets/imgs/about-jagged.svg" class="absolute top-10 -left-4 z-1 hidden lg:block transform-gpu lg:translate-x-[-8.8rem] lg:translate-y-[-3.8rem] 2xl:translate-x-[-5.8rem] 2xl:translate-y-[-1.8rem]" alt="">
+        <img src="/assets/imgs/about-jagged.svg"
+             class="absolute top-10 -left-4 z-1 hidden lg:block transform-gpu lg:translate-x-[-8.8rem] lg:translate-y-[-3.8rem] 2xl:translate-x-[-5.8rem] 2xl:translate-y-[-1.8rem] "
+             alt="">
     </div>
     <div class="w-full ">
-        <img  class="transform-gpu translate-x-[-9rem] translate-y-[-7rem] z-10" src="{{about_image}}" alt="">
-<!--        {{ svg src="about-jagged" id="topCornerImage" class="absolute top-0 left-0  -rotate-45" }}-->
-<!--        {{ svg src="quarter" id="bottomCornerImage" class="absolute top-0 left-0  z-1 rotate-45 "}}-->
-
+        <img class="transform-gpu translate-x-[-9rem] translate-y-[-7rem] 6xl:translate-y-[-3rem] z-10" src="{{about_image}}" alt="">
     </div>
 
 </div>
