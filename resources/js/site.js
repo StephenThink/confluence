@@ -14,14 +14,11 @@ barba.init({
         leave(data) {
             return gsap.to(data.current.container, {
                 opacity: 0,
-                y: 100,
-                duration: 1.5
             });
         },
         enter(data) {
             return gsap.from(data.next.container, {
                 opacity: 1,
-                duration: 1.5
             });
         },
         once(data) {
