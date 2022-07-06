@@ -6,23 +6,31 @@ window.Alpine = Alpine
 
 Alpine.start()
 
-// import barba from '@barba/core';
-//
-// barba.init({
-//     transitions: [{
-//         name: 'opacity-transition',
-//         leave(data) {
-//             return gsap.to(data.current.container, {
-//                 opacity: 0
-//             });
-//         },
-//         enter(data) {
-//             return gsap.from(data.next.container, {
-//                 opacity: 0
-//             });
-//         }
-//     }]
-// });
+import barba from '@barba/core';
+
+barba.init({
+    transitions: [{
+        name: 'opacity-transition',
+        leave(data) {
+            return gsap.to(data.current.container, {
+                opacity: 0,
+                y: 100,
+                duration: 1.5
+            });
+        },
+        enter(data) {
+            return gsap.from(data.next.container, {
+                opacity: 1,
+                duration: 1.5
+            });
+        },
+        once(data) {
+            return gsap.from(data.next.container, {
+                opacity: 0,
+            });
+        }
+    }]
+});
 
 
 
