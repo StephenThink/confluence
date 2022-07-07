@@ -1,12 +1,12 @@
 <div class="panel-size flex flex-col space-y-4 {{ bg ? bg : 'bg-dark-lime' }} {{ tc ? tc : 'text-white' }} ">
     {{ partners }}
     {{ if bg }}
-    <div class="block-heading">{{partner_heading}}</div>
+    <div class="block-heading" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-back">{{partner_heading}}</div>
     {{ else }}
-    <div class="alt-block-heading">{{partner_heading}}</div>
+    <div class="alt-block-heading" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-back">{{partner_heading}}</div>
     {{ /if }}
-    <div class="">{{partner_subheading}}</div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-x-2 align-middle items-center transform md:translate-y-[-3.3rem pt-8]">
+    <div class="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-easing="ease-in-back">{{partner_subheading}}</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 space-x-2 align-middle items-center transform md:translate-y-[-3.3rem pt-8]" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000" data-aos-easing="ease-in-back">
         {{ companies }}
        <img class="w-6/12 {{ if !bg }} filter invert {{ /if }}" src="{{company_image}}" alt="{{company_name}}"></img>
 

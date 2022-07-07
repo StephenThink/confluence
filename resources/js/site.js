@@ -6,6 +6,10 @@ window.Alpine = Alpine
 
 Alpine.start()
 
+import AOS from 'aos';
+
+AOS.init();
+
 // import barba from '@barba/core';
 //
 // barba.init({

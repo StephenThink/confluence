@@ -1,6 +1,6 @@
 <nav x-data="{ navOpen: false }" @keydown.escape="navOpen = false"
      class="h-navbar flex justify-between items-center text-dark px-24  text-4xl z-100 {{ !green_navbar ? 'bg-white' : 'bg-lime' }} w-full relative">
-    <a id="homelink" href="/" class="flex items-center lg:pl-24 -ml-16 lg:ml-0 "><span
+    <a id="homelink" href="/" class="flex items-center lg:pl-24 -ml-16 lg:ml-0" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-back"><span
         class="text-black">confluence </span><span><img
         class="h-8 pl-3 mt-navLogo" src="{{ !green_navbar ? '/assets/logos/company_logo.svg' : '/assets/logos/black_tick.svg' }}"
         alt=""></span></a>

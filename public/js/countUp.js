@@ -25,12 +25,16 @@ var options = {
 var theObserver = new IntersectionObserver(doSomething, options);
 
 function doSomething(entries) {
+  var delayInStarting = 1250;
+
   var _entries = _slicedToArray(entries, 1),
       entry = _entries[0];
 
   if (entry.isIntersecting) {
     // Do Something when in view
-    counting();
+    setTimeout(function () {
+      counting();
+    }, delayInStarting);
   } else {
     console.log('no you dont!');
   }

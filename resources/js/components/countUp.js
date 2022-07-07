@@ -8,10 +8,14 @@ const options = {
 const theObserver = new IntersectionObserver(doSomething, options)
 
 function doSomething(entries) {
+    const delayInStarting = 1250;
     const [entry] = entries;
     if (entry.isIntersecting) {
         // Do Something when in view
-counting();
+        setTimeout(()=> {
+            counting();
+
+        }, delayInStarting);
 
     } else {
         console.log('no you dont!');
