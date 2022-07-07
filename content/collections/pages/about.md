@@ -10,7 +10,7 @@ updated_by: ede9b1f2-55fa-4468-bcad-b7d493cb7d7a
 updated_at: 1656944980
 text_link_text: 'Discover more about'
 link_content: 'our team >'
-about_image: imgs/aboutGroup.svg
+about_image: imgs/aboutGroup.png
 show_chat: true
 chat_light: false
 ---
