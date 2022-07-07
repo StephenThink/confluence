@@ -16,3 +16,4 @@ yarn-error.log
 /public/assets/
 /public/products/
 /public/products/
+/storage/forms/*

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title ?? site:name }}</title>
     <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+
+    {{ seo_pro:meta }}
+    {{ captcha:head }}
+
 </head>
 <body class="bg-white leading-normal font-be-semi-bold w-full relative max-w-full overflow-x-hidden
     @env(['local','staging'] )

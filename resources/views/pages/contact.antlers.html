@@ -14,17 +14,16 @@
         </div>
         <img class="absolute hidden sm:block sm:w-10/12 md:w-[644px] xl:w-1/2 4xl:w-[965px]" src="/assets/imgs/contactGroup.png" alt="">
 <!--       Right hand side of the page -->
-        <div class="p-24 px-6  sm:pt-[24rem] md:pt-[25.5rem] lg:pt-8 2xl:w-10/12 4xl:pt-16  4xl:pb-[9rem]  5xl:w-10/12 5xl:ml-0" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500" data-aos-easing="ease-in-back">
+        <div class="p-24 px-6  sm:pt-[24rem] md:pt-[25.5rem] lg:pt-8 2xl:w-10/12 4xl:pt-16  4xl:pb-[6.5rem]  5xl:w-10/12 5xl:ml-0 6xl:pb-16" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500" data-aos-easing="ease-in-back">
             {{ form:contact }}
-
             {{ if success }}
-            <div class="bg-green-300 text-white p-2">
-                {{ success }}
+            <div class="bg-white rounded-lg text-black p-2 text-xl text-center lg:mb-[22rem] xl:mb-[28rem] 2xl:mb-[29rem] 3xl:mb-[30rem] 4xl:mb-[35.9rem]">
+                <p>Thank you, your message has been successfully sent.</p>
             </div>
             {{ else }}
 
             {{ if errors }}
-            <div class="bg-red-300 text-white p-2">
+            <div class="bg-red-300 text-white p-4">
                 {{ errors }}
                 {{ value }}<br>
                 {{ /errors }}
@@ -54,7 +53,19 @@
 
             <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
 
-            <button class="rounded-full px-16 py-2 bg-white text-dark" type="submit">Submit</button>
+            <div class="flex flex-col space-y-4  md:flex-row md:space-y-0 justify-between items-center">
+                <div class="">
+                    {{ captcha }}
+                    {{ if error:captcha }}
+                    <div class="text-sm text-red-500">{{ error:captcha }}</div>
+                    {{ /if }}
+                </div>
+
+
+                <button class="rounded-full px-16 py-2 bg-white text-dark h-12" type="submit">Submit</button>
+
+            </div>
+
            {{ /if }}
 
             {{ /form:contact }}
