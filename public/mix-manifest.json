@@ -1,7 +1,7 @@
 {
-    "/js/site.js": "/js/site.js",
-    "/js/countUp.js": "/js/countUp.js",
-    "/vendor/app/js/cp.js": "/vendor/app/js/cp.js",
-    "/vendor/app/css/cp.css": "/vendor/app/css/cp.css",
-    "/css/tailwind.css": "/css/tailwind.css"
+    "/js/site.js": "/js/site.js?id=4f0b46a782d2995a7542f1cf75e7b52e",
+    "/js/countUp.js": "/js/countUp.js?id=b35e683dee89398e182575d00d8a9513",
+    "/vendor/app/js/cp.js": "/vendor/app/js/cp.js?id=d41d8cd98f00b204e9800998ecf8427e",
+    "/vendor/app/css/cp.css": "/vendor/app/css/cp.css?id=461c23777dba0a5c0ae26c5f61c5911b",
+    "/css/tailwind.css": "/css/tailwind.css?id=49cb941f15eb52624ea7aea95c1b2463"
 }
